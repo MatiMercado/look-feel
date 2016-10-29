@@ -1,0 +1,217 @@
+<resources>
+    <string name="app_name">look&amp;feel</string>
+    <!--Not declared by me-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">User</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="Ingresar">Ingresar</string>
+    <string name="title_activity_settings">Settings</string>
+
+
+    <!-- Harry's Strings-->
+
+    <string name="title_activity_home">Home</string>
+    <string name="order_tickerText">Se ha actualizado una orden de compra.</string>
+    <string name="order_contentTitle">look&amp;feel</string>
+    <string name="order_contentText">Accede a tu compra!</string>
+
+
+
+<!-- TODO: Remove or change this placeholder text
+    <string name="hello_blank_fragment">Hello blank fragment</string>-->
+
+    <string name="title_activity_profile">Settings</string>
+
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+
+    <string name="pref_header_general">General</string>
+
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+
+
+    <string name="pref_header_data_sync">Mis Compras</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notificaciones</string>
+    <string name="help_how_to_buy">¿Cómo Comprar?</string>
+    <string-array name="help_options">
+        <item>¿Quiénes Somos?</item>
+        <item>Atención al Cliente</item>
+        <item>Preguntas Frecuentes</item>
+    </string-array>
+
+
+
+
+
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibración</string>
+
+    <string name="Vibracion">Vibración</string>
+    <string name="Notificaciones">Notificaciones</string>
+    <string name="select_lan">Idioma</string>
+    <string name="spanish">Español</string>
+    <string name="English">Inglés</string>
+    <string name="select_language">Selecionar Idioma</string>
+    <string name="tono">Tono</string>
+
+    <string-array name="listOptions">
+        <item>Español</item>
+        <item>Inglés</item>
+    </string-array>
+
+    <string-array name="listValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+
+    <!-- *************************** -->
+    <string name="search_title">Buscar un Producto</string>
+    <string name="search_hint">Buscar un Producto</string>
+    <string name="search_results">Resultados de Búsqueda</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_search_results">Resultados de Búsqueda</string>
+    <string name="tab_title_search_results">Productos</string>
+    <string name="tab_title_new">Nuevos</string>
+    <string name="tab_title_deals">Ofertas</string>
+    <string name="element_text">Element</string>
+
+
+
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="outstanding">Destacados</string>
+    <string name="offers">Ofertas</string>
+
+    <string name="signin">Ingresar</string>
+
+    <string name="order_state_confirmed">C</string>
+    <string name="order_state_transported">T</string>
+    <string name="order_state_delivered">E</string>
+    <string name="order_state_confirmed_long">Confirmada</string>
+    <string name="order_state_transported_long">Transportada</string>
+    <string name="order_state_delivered_long">Entregada</string>
+    <string name="title_activity_purchases_activity">Mis Compras</string>
+    <string name="purchase_detail_price_title">Precio Total: </string>
+    <string name="title_activity_purchase_detail_activity">Detalle de Compra:</string>
+    <string name="purchase_detail_date_confirmed_title">Fecha Confirmada: </string>
+    <string name="purchase_detail_date_transported_title">Fecha Transportada: </string>
+    <string name="purchase_detail_date_delivered_title">Fecha Entregada: </string>
+    <string name="purchase_detail_address_name_title">Dirección de Entrega:     </string>
+    <string name="purchase_detail_province_title">Provincia: </string>
+    <string name="purchase_detail_city_title">Ciudad: </string>
+    <string name="order_detail_telephone_title">Teléfono: </string>
+    <string name="order_detail_zip_code_title">Código Postal: </string>
+    <string name="order_detail_street_title">Calle: </string>
+    <string name="order_detail_number_title">Altura: </string>
+    <string name="order_detail_floor_title">Piso: </string>
+    <string name="order_detail_door_title">Departamento: </string>
+    <string name="brand_title">Marca</string>
+    <string name="description_title">Descripción</string>
+    <string name="product_sizes_title">Talles</string>
+    <string name="product_colors_title">Colores</string>
+    <string name="recommended_title">Recomendaciones</string>
+    <string name="product_detail">Detalle de Producto</string>
+
+    <string name="home">Página Pricipal</string>
+    <string name="tools">Configuraciones</string>
+    <string name="help">Ayudas y Contacto</string>
+    <string name="women">Mujeres</string>
+    <string name="men">Hombres</string>
+    <string name="girl">Niñas</string>
+    <string name="boy">Niños</string>
+    <string name="baby">Bebés</string>
+    <string name="profile">Mi Perfil</string>
+    <string name="fname_user">Android Studio</string>
+    <string name="email_user">android.studio@android.com</string>
+
+
+    <string name="category_women_title">Mujeres</string>
+    <string name="categories_title">Categorías</string>
+    <string name="category_kid_title">Bebés</string>
+    <string name="subcategories_title">Subcategorías</string>
+    <string name="subsubcategories_title">Sub-Subcategorías</string>
+    <string name="products_not_found">No hay productos que cumplan con los criterios de búsqueda.</string>
+    <string name="category_men_title">Hombres</string>
+    <string name="category_girls_title">Niñas</string>
+    <string name="category_boys_title">Niños</string>
+    <string name="Buys">Mis Compras</string>
+    <string name="Close_session">Cerrar Sesión</string>
+    <string name="Construction">Aplicación en Contrucción</string>
+    <string name="User">Usuario:</string>
+    <string name="register_user">Usuario Registrado</string>
+
+    <!-- *************************** -->
+
+
+
+</resources>

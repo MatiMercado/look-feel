@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>look&amp;feel</title>
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="finalizar_compra.css">
+
+<!-- ____________________________________________________ --><link href="sticky-footer-navbar.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    
+    <header id="content-top">
+
+
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a id="logo-box" class="navbar-brand verticalLine" href="index.html"><h1>look&amp;feel</h1></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            
+            <ul class="nav navbar-nav">
+              <li id="women"><a id="women-link" href="#">Mujeres</a></li>
+              <li id="men"><a id="men-link" href="#" class="verticalLine">Hombres</a></li>
+              <li id="girls"><a id="girls-link" href="#">Niñas</a></li>
+              <li id="boys" class="verticalLine"><a id="boys-link" href="#">Niños</a></li>
+              <li id="babies"><a id="babies-link" href="#">Bebés</a></li>
+            </ul>
+
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input id="search_key" type="text" class="form-control search-bar" placeholder="Buscar un producto">
+              </div>
+              <button id="search" type="button" class="btn btn-default">Ir</button>
+            </form>
+            
+            <ul class="nav navbar-nav navbar-right">
+              <li><a id="register" href="register.html">Registrarse</a></li>
+              <li class="verticalLine"><a id="login" href="ingresar.html">Ingresar</a></li>
+              <li><a id="cart-link" href="#"><img id="cart-img" src="img/cart.png" alt="carrito"></a></li>
+              <li id="fav-li"><a id="fav-link" href="#"><img id="fav-img" src="img/fav.png" alt="favoritos"></a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+  </header>
+
+<!-- ___________________________________________ -->
+
+
+	<div class="container">
+		    <!-- ___________________________________________ -->
+    <noscript>
+      <div class="alert alert-danger" role="alert">
+       <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+       <span class="sr-only">Error:</span>
+        Es necesario activar JavaScript para que la web funcione correctamente.
+      </div>
+    </noscript>
+    <!-- End no js msg -->
+    <!-- ___________________________________________ -->
+		<div class="row">
+			<h2 class="page-title mov-margin">Finalizar Compra</h2>
+		</div>
+		<div class="row">
+			<p class="subtext2">Campos Obligarotios(<span class="rojito">*</span>)</p>
+		</div>
+
+		<div class="row">
+			<h3 class="page-subtitle mov-margin">Entrega de Producto</h3>
+		</div>
+		<div class="row">
+			<div class="col-md-10">
+				<hr class="hr_horizontal2">
+			</div>
+		</div>
+		<!--<div class="row">
+			<h5 class="page-sub-subtitle mov-margin">Seleccionar Fecha y Hora de Entrega <span class="rojito">*</span></h5>
+		</div>
+		<div class="row">
+		</div>
+		<div class="row">
+			<div class="col-md-8">
+				<div class="col-xs-2">
+					<p>Mes:<span class="rojito">*</span></p>
+				</div>
+				<div class="col-xs-2">
+					<div class="dropdown uncomplete">
+							<button id="but-month" class="btn btn-md dropdown-toggle" type="button" data-toggle="dropdown">
+							<span class="caret"></span></button>
+							<ul id="drop-month" class="dropdown-menu">
+							<li><a>Enero</a></li>
+							<li><a>Febrero</a></li>
+							<li><a>Marzo</a></li>
+							<li><a>Abril</a></li>
+							<li><a>Mayo</a></li>
+							<li><a>Junio</a></li>
+							<li><a>Julio</a></li>
+							<li><a>Agosto</a></li>
+							<li><a>Septiembre</a></li>
+							<li><a>Octubre</a></li>
+							<li><a>Noviembre</a></li>
+							<li><a>Diciembre</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<p>Día:<span class="rojito">*</span></p>
+				</div>
+				<div class="col-xs-2">
+					<div class="dropdown">
+							<button id="but-day" class="btn btn-md dropdown-toggle" type="button" data-toggle="dropdown">
+							<span class="caret"></span></button>
+							<ul id="drop-day" class="dropdown-menu">
+							<li><a>01</a></li>
+							<li><a>02</a></li>
+							<li><a>03</a></li>
+							<li><a>14</a></li>
+							<li><a>15</a></li>
+							<li><a>16</a></li>
+							<li><a>24</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<p>Hora:<span class="rojito">*</span></p>
+				</div>
+				<div class="col-xs-2">
+					<div class="dropdown">
+							<button id="but-hour" class="btn btn-md dropdown-toggle" type="button" data-toggle="dropdown">
+							<span class="caret"></span></button>
+							<ul id="drop-hour" class="dropdown-menu">
+							<li><a>09:00</a></li>
+							<li><a>11:00</a></li>
+							<li><a>13:00</a></li>
+							<li><a>15:00</a></li>
+							<li><a>18:00</a></li>
+						</ul>
+					</div>
+				</div>				
+			</div>
+		</div>-->
+		<div class="row">
+			<h5 class="page-sub-subtitle mov-margin">Seleccionar Lugar de Entrega<span class="rojito">*</span></h5>
+		</div>
+
+		<div class="row">
+			<div class="radio col-md-12 mov-margin">
+	            <label>
+	              <input type="radio" name="radios" class="track-order-change" id="firstRadio" value="">
+	              Usar Datos de la Cuenta
+	            </label>
+	        </div>
+
+	        <div class="col-md-12 panel-collapse collapse" id="firstAccordion">
+	            <div id="ADDRESS" class="col-xs-6 thumbnail listElem">
+	            	
+	            </div>
+	        </div>
+
+	        <div class="radio col-md-12 mov-margin">
+	            <label>
+	              <input type="radio" name="radios" class="track-order-change" id="secondRadio">
+	              Usar otra Dirección para la Compra
+	            </label>
+	        </div>
+
+	        <div class="col-md-12 panel-collapse collapse" id="secondAccordion">
+	            <div>
+	            	<div class="col-md-5 datos_de_cuenta thumbnail">
+	            		<div class="row textList">
+							<div class="col-md-2">
+								<p class="question2">Nombre:<span class="rojito">*</span></p>
+							</div>
+							<div class="col-md-9">
+								<p><input id="addr_name" class="form-control pull-right" type="text" name="Nombre" value=""></p>
+							</div>
+						</div>
+						<div class="col-xs-12 collapse" id="collapse_addr_name">
+							<p class="rojito">El nombre es inválido.</p>
+						</div>
+	              		<div class="row textList">
+							<div class="col-md-2">
+								<p class="question2">Provincia:<span class="rojito">*</span></p>
+							</div>
+							<div class="col-md-9">
+								<p><input id="addr_prov" class="form-control pull-right" type="text" name="Nombre" value=""></p>
+							</div>
+						</div>
+						<div class="col-xs-12 collapse" id="collapse_addr_prov">
+							<p class="rojito">La provincia no es válida</p>
+						</div>
+						<div class="row textList">
+							<div class="col-md-2">
+								<p class="question2">Ciudad:<span class="rojito">*</span></p>
+							</div>
+							<div class="col-md-9">
+								<p><input id="addr_city" class="form-control pull-right" type="text" name="Nombre" value=""></p>
+							</div>
+						</div>
+						<div class="col-xs-12 collapse" id="collapse_addr_city">
+							<p class="rojito">La ciudad no es válida</p>
+						</div>
+						<div class="row textList">
+							<div class="col-md-2">
+								<p class="question2">Teléfono:<span class="rojito">*</span></p>
+							</div>
+							<div class="col-md-9">
+								<p><input id="addr_phone" class="form-control pull-right" type="text" name="Nombre" value=""></p>
+							</div>
+						</div>
+						<div class="col-xs-12 collapse" id="collapse_addr_phone">
+							<p class="rojito">El teléfono no debe contener ni '011' ni '-'.</p>
+						</div>
+						<div class="row textList">
+							<div class="col-md-2">
+								<p class="question2">Código Postal:<span class="rojito">*</span></p>
+							</div>
+							<div class="col-md-9">
+								<p><input id="addr_zipCode" class="form-control pull-right" type="text" name="Nombre" value=""></p>
+							</div>
+						</div>
+						<div class="col-xs-12 collapse" id="collapse_addr_zipCode">
+							<p class="rojito">EL código postal es inválido</p>
+						</div>
+						<div class="row textList">
+							<div class="col-md-2">
+								<p class="question2">Calle:<span class="rojito">*</span></p>
+							</div>
+							<div class="col-md-9">
+								<p><input id="addr_street" class="form-control pull-right" type="text" name="Nombre" value=""></p>
+							</div>
+						</div>
+						<div class="col-xs-12 collapse" id="collapse_addr_street">
+							<p class="rojito">La calle es inválida.</p>
+						</div>
+						<div class="row textList">
+							<div class="col-md-2">
+								<p class="question2">Altura:<span class="rojito">*</span></p>
+							</div>
+							<div class="col-md-9">
+								<p><input id="addr_heigth" class="form-control pull-right" type="text" name="Nombre" value=""></p>
+							</div>
+						</div>
+						<div class="col-xs-12 collapse" id="collapse_addr_heigth">
+							<p class="rojito">La altura es inválida.</p>
+						</div>
+						<div class="row textList">
+							<div class="col-md-2">
+								<p class="question2">Piso:</p>
+							</div>
+							<div class="col-md-3">
+								<p><input id="addr_floor" class="form-control pull-right" type="text" name="Nombre" value=""></p>
+							</div>
+							<div class="col-md-3 ">
+								<p class="question2">Departamento:</p>
+							</div>
+							<div class="col-md-3">
+								<p><input id="addr_gate" class="form-control pull-right" type="text" name="Nombre" value=""></p>
+							</div>
+						</div>
+						<div class="col-xs-12 collapse" id="collapse_addr_floor">
+							<p class="rojito">El piso o el departamento son inválidos.</p>
+						</div>
+						<div class="row">
+			       			<div class="col-xs-8 col-xs-offset-2">
+			       				<button id="ADD_ADDR" type='button' class='btn btn-lg btn-block btn-primary extra'>Agregar a mis Direcciones</button>
+			       			</div>
+			       		</div>
+			       		<div class="col-xs-12 collapse" id="collapse_add_addr">
+							<p class="rojito centered">Faltan completar datos.</p>
+						</div>
+	            	</div>
+	       		</div>
+	       	</div>
+        </div>
+        <div class="row">
+			<h3 class="page-subtitle mov-margin">Medio de pago</h3>
+		</div>
+		<div class="row">
+			<div class="col-md-10">
+				<hr class="hr_horizontal2">
+			</div>
+		</div>
+        <div class="row">
+			<h5 class="page-sub-subtitle mov-margin">Seleccionar Medio de Pago <span class="rojito">*</span></h5>
+		</div>
+
+		<div class="row">
+		
+			<div class="radio col-md-12 mov-margin">
+	            <label>
+	              <input type="radio" name="radios2" class="track-order-change" id="thirdRadio" value="">
+	              Contrareembolso
+	            </label>
+	        </div>
+	       	<div class="col-md-12 panel-collapse collapse" id="thirdAccordion"></div>
+
+	        <div class="radio col-md-12 mov-margin">
+	            <label>
+	              	<input type="radio" name="radios2" class="track-order-change" id="fourthRadio">
+	              	Tarjeta de crédito
+	            </label>
+	        </div>
+
+          	<div class="col-md-12 panel-collapse collapse" id="fourthAccordion">
+	            <div class="aux">
+	            	<div class="radio col-md-12">
+			            <label>
+			              <input type="radio" name="radios3" class="track-order-change" id="fifthRadio" value="">
+			              Usar datos de la cuenta
+			            </label>
+			        </div>
+
+			        <div class="col-md-12 panel-collapse collapse" id="fifthAccordion">
+			            <div  id="CARDS" class="col-xs-6 thumbnail listElem">
+			         
+			            </div>
+			        </div>
+
+			        <div class="radio col-md-12">
+			            <label>
+			              <input type="radio" name="radios3" class="track-order-change" id="sixthRadio">
+			              Usar otra tarjeta para la compra
+			            </label>
+			        </div>
+
+			        <div class="col-md-12 panel-collapse collapse" id="sixthAccordion">
+			            <div class="row">
+			            	<div class="col-md-6 datos_de_cuenta thumbnail">
+			              		<!--<div class="row textList">
+									<div class="col-md-4">
+										<p class="question2">Tipo:<span class="rojito">*</span></p>
+									</div>
+									<div class="col-md-8">
+										<p><input class="form-control pull-right" type="text" name="Nombre" value=""></p>
+									</div>
+								</div>-->
+
+								<div class="row textList">
+									<div class="col-md-4">
+										<p class="question2">Número:<span class="rojito">*</span></p>
+									</div>
+									<div class="col-md-8">
+										<p><input id="cart_number" class="form-control pull-right" type="text" name="Nombre" value=""></p>
+									</div>
+								</div>
+								<div class="col-xs-12 collapse" id="collapse_cart_number">
+									<p class="rojito">El número no debe contener '-' y tener 16 caracteres.</p>
+								</div>
+								<div class="row textList">
+									<div class="col-md-4">
+										<p class="question2">Código de Seguridad:<span class="rojito">*</span></p>
+									</div>
+									<div class="col-md-8">
+										<p><input id="cart_cod" class="form-control pull-right" type="password" name="Nombre" value=""></p>
+									</div>
+								</div>
+								<div class="col-xs-12 collapse" id="collapse_cart_cod">
+									<p class="rojito">El código debe tener 3 caracteres.</p>
+								</div>
+								<div class="row textList">
+									<div class="col-md-4">
+										<p class="question2">Fecha de Vencimiento:<span class="rojito">*</span></p>
+									</div>
+									<div class="col-md-8">
+										<div class="col-xs-6 col-md-6">
+											<div class="dropdown">
+				  								<button class="btn btn-md dropdown-toggle btn-default" type="button" data-toggle="dropdown">Mes
+				 								<span class="caret"></span></button>
+				 								<ul id="MONTH" class="dropdown-menu listElem">
+													<li><a class="month1">Enero</a></li>
+													<li><a class="month3">Febrero</a></li>
+													<li><a class="month1">Marzo</a></li>
+													<li><a class="month2">Abril</a></li>
+													<li><a class="month1">Mayo</a></li>
+													<li><a class="month2">Junio</a></li>
+													<li><a class="month1">Julio</a></li>
+													<li><a class="month1">Agosto</a></li>
+													<li><a class="month2">Septiembre</a></li>
+													<li><a class="month1">Octubre</a></li>
+													<li><a class="month2">Noviembre</a></li>
+													<li><a class="month1">Diciembre</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-xs-6 col-md-6">
+											<div class="dropdown">
+				  								<button class="btn btn-md dropdown-toggle btn-default" type="button" data-toggle="dropdown">Año
+				 								<span class="caret"></span></button>
+				 								<ul id="YEARS" class="dropdown-menu listElem">
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 collapse" id="collapse_cart_date">
+									<p class="rojito">La fecha no es vádida o la tarjeta esta vencida.</p>
+								</div>
+								<div class="row">
+					       			<div class="col-xs-6 col-xs-offset-3">
+					       				<button id="ADD_CART" type='button' class='btn btn-lg btn-block btn-primary extra'>Agregar a mis Tarjetas</button>
+					       			</div>
+					       		</div>
+					       		<div class="col-xs-12 collapse" id="collapse_add_cart">
+									<p class="rojito centered">Faltan completar datos.</p>
+								</div>	
+			            	</div>
+			       		</div>
+			       		
+			       	</div>
+   		 		</div>
+      		</div>
+
+		</div>
+		<div class="row">
+			<h3 class="page-subtitle mov-margin">Datos personales</h3>
+		</div>
+		<div class="row">
+			<div class="col-md-10">
+				<hr class="hr_horizontal2">
+			</div>
+		</div>
+		 <div class="row">
+			<h5 class="page-sub-subtitle mov-margin">Datos de la Cuenta</h5>
+		</div>
+
+		<div class="row">
+			<div class="col-md-5 mov-margin">
+	          	<ul class="thumbnail datos_de_cuenta2">
+					<li id="fname_id" class="textList2">Nombre: </li>
+					<li id="lname_id" class="textList2">Apellido: </li>
+					<li class="textList2">Tipo de Indentificación: DNI</li>
+					<li id="DNI_id" class="textList2">Número: </li>
+				</ul>
+	        </div>
+	    </div>
+        <div class="row">
+			<div class="col-md-11">
+				<hr class="hr_horizontal2">
+			</div>
+		</div>
+        <div class="row">
+        	<div class="col-xs-4 col-xs-offset-1">
+        			<button type="button" class="btn btn-lg btn-block btn-success extra margin-bottom-aux" id="AD1">Confirmar Compra</button>
+        	</div>
+        	<div class="col-xs-4 col-xs-offset-1">
+        			<button type="button" class="btn btn-lg btn-block btn-danger extra margin-bottom-aux" id="C1">Cancelar Compra</button>
+        	</div>
+        </div>
+        <div class="col-xs-12 collapse" id="collapse_comprar">
+			<p class="rojito centered">Faltan completar datos o los mismos son inválidos.</p>
+		</div>	
+
+	</div>
+
+<!-- ___________________________________________________ -->
+    <footer class="footer">
+      <div class="container footer-cont">
+
+        <div class="row">
+
+          <div class="col-xs-6 col-sm-6 col-md-8">
+            <div class="row">
+
+              <div class="col-xs-12 col-sm-12 col-md-6"> <!---->
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-6 col1">
+                    <div class="footer-text">
+                      <p class="text-muted">
+                        <b>Seguinos</b>
+                      </p>
+                        <ul>
+                          <li><a href="http://facebook.com" target="_blank">Facebook</a></li>
+                          <li><a href="http://twitter.com" target="_blank">Twitter</a></li>
+                          <li><a href="http://instagram.com" target="_blank">Instagram</a></li>
+                          <li><a href="https://plus.google.com" target="_blank">Google+</a></li>
+                          <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                
+
+                  <div class="col-xs-6 col-sm-6 col-md-6 col2">
+                    <div class="footer-text">
+                      <p class="text-muted">
+                        <b>Empresa</b>
+                      </p>
+                        <ul>
+                          <li><a href="en_construccion.html">¿Quiénes somos?</a></li>
+                          <li><a href="en_construccion.html">Términos y condiciones</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-xs-12 col-sm-12 col-md-6"> <!---->  
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-6 col3">
+                     <div class="footer-text">
+                      <p class="text-muted">
+                        <b>Ayuda</b>
+                      </p>
+                        <ul>
+                          <li><a href="en_construccion.html">Atención al cliente</a></li>
+                          <li><a href="faq.html">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                  
+                  <div class="col-xs-6 col-sm-6 col-md-6 col4">
+                   <div class="footer-text">
+                    <p class="text-muted">
+                      <b></b>
+                    </p>
+                      <ul>
+                        <li><a href="http://www.visa.com.ar/" target="_blank"></a></li>
+                        <li><a href="https://www.masterconsultas.com.ar/" target="_blank"></a></li>
+                        <li><a href="https://www.americanexpress.com/ar/" target="_blank"></a></li>
+                        <li><a href="http://www.mastercard.com/ar/consumidores/maestro.html" target="_blank"></a></li>
+                        <li><a href="http://www.cabal.coop/" target="_blank"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+          <div class="col-xs-6 col-sm-6 col-md-3 col-md-offset-1 -col5">
+            <div class="footer-buy-button">
+              <!--<p class="text-muted">-->
+                <button id="howtobuy" class="btn btn-default howtobuy" type="button">
+                  ¿Cómo comprar?
+                </button>
+              <!--</p>-->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
+
+<script src="cart.js"></script>
+<script src="API.js"></script>
+<script src="cookies.js"></script>
+<script src="index.js"></script>
+
+<script>
+$(document).ready(function(){
+
+	 ///////////////////////////
+    floads();
+
+    if (isLogged()){
+      var fav_q = localStorage.getItem('countItem');
+      if (fav_q == null || fav_q == "null")
+        localStorage.setItem('countItem', 0);
+
+      $('#fav-link').append('(' + fav_q + ')');
+
+      getCartLength(
+        function(length){
+           $('#cart-link').append('(' + length + ')');
+        },
+        function(){
+          //KillLoader();
+        });
+
+    } else {
+      //KillLoader();
+    }
+	/////////////////////////////////
+
+// <<<<<<< Updated upstream
+// =======
+// 		xmlhttp.onreadystatechange = function() {
+// 		    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+// 		        var myArr = JSON.parse(xmlhttp.responseText);
+// 		        var a = func(myArr);
+// 		        return a;
+// 		    }
+// 		}
+// 		xmlhttp.open("GET", url, true);
+// 		xmlhttp.send();
+// 	}
+// 	url="http://eiffel.itba.edu.ar/hci/service3/Account.groovy?method=SignIn&username=chello&password=poiuytrewq";
+// 			APIAction(url,function (arr){
+// 				localStorage.setItem("username", arr["account"].username);
+// 				localStorage.setItem("token", arr["authenticationToken"]);
+// 			});
+// >>>>>>> Stashed changes
+
+	/* Funcion para loguearse (Despues la reemplazamos por el SignIn)*/
+	function convertMonth(month){
+		switch(month){
+			case "Enero":
+				return 0;
+			case "Febrero":
+				return 1;
+			case "Marzo":
+				return 2;
+			case "Abril":
+				return 3;
+			case "Mayo":
+				return 4;
+			case "Junio":
+				return 5;
+			case "Julio":
+				return 6;
+			case "Agosto":
+				return 7;
+			case "Septiembre":
+				return 8;
+			case "Octubre":
+				return 9;
+			case "Noviembre":
+				return 10;
+			case "Diciembre":
+				return 11;			
+		}
+	}
+	function convertMonthToString(month){
+		switch(month){
+			case "Enero":
+				return "01";
+			case "Febrero":
+				return "02";
+			case "Marzo":
+				return "03";
+			case "Abril":
+				return "04";
+			case "Mayo":
+				return "05";
+			case "Junio":
+				return "06";
+			case "Julio":
+				return "07";
+			case "Agosto":
+				return "08";
+			case "Septiembre":
+				return "09";
+			case "Octubre":
+				return "10";
+			case "Noviembre":
+				return "11";
+			case "Diciembre":
+				return "12";			
+		}
+	}
+
+	var h3 = function(arr){
+
+		for(var x=2015;x<2030;x++){
+			aux2=$("<li><a>"+x+"</a></li>");
+			$("#YEARS").append(aux2);
+		}
+
+		var a = arr["creditCards"];
+		if (a === undefined || a.length == 0) {
+			$("#CARDS").append("<label><em>No tiene Tarjetas asociadas a su cuenta.</em></label>");
+			return;
+		}
+		has_cart = true;
+		var i;
+		$.each(a, function (i, value){
+
+			var aux = $("<div class='radio col-xs-12'>"+
+			            "<label id='label_radio_"+i+"'>"+
+			              "<input type='radio' name='radios_cart' class='track-order-change' id='RadioCart"+i+"'>"+
+			              "Número: "+value.number+"</label></div>");
+
+			$("#CARDS").append(aux);
+
+    		$("input[name='radios_cart']").change( function() {
+        		if($('#RadioCart'+i).is(":checked")){
+        			//alert("RadioCart");
+        			var username = get_cookie("username");
+        			//var username = localStorage.getItem("username");
+        			cart_number=value.number;
+        			cart_date=value.expirationDate;
+        			cart_cod=value.securityCode;
+        			//cart_id=value.id;
+        			localStorage.setItem("cart_id"+username,'{"id":'+value.id+'}');
+        			// console.log(username);
+        			// console.log(value);
+        			// console.log(localStorage.getItem("cart_id"+username));
+        		}
+        	});
+		});
+	}
+	
+	var getPersonalInfo = function(arr){
+		var a = arr["account"];
+		$("#fname_id").text($("#fname_id").text()+a.firstName);
+		$("#lname_id").text($("#lname_id").text()+a.lastName);
+		$("#DNI_id").text($("#DNI_id").text()+a.identityCard);
+	}
+
+	var getCards = function(arr){
+		var a=arr["total"];
+		url2="http://eiffel.itba.edu.ar/hci/service3/Account.groovy?method=GetAllCreditCards&username="+username+"&authentication_token="+token+"&page_size="+a;
+		APIAction(url2,h3);
+	}
+
+	var gatAddr = function(arr){
+		var a = arr["addresses"];
+		if (a === undefined || a.length == 0) {
+			$("#ADDRESS").append("<label><em>No tiene Direcciones asociadas a su cuenta.</em></label>");
+			return;
+		}
+		has_addr = true;
+		var i;
+		$.each(a, function (i, value){
+			var aux = $("<div class='radio col-xs-12'><label id='label_addr_"+i+"' class='width'>"+
+			              "<input type='radio' name='radios_addr' class='track-order-change' id='RadioAddr"+i+"'>"+
+			              "<ul class='datos_de_cuenta2'>"+
+			              		"<li id='name"+i+"'class='textList2'>Provincia:<span class='rojito'>*</span>"+parNull(value.name)+"</li>"+
+			              		"<li id='prov"+i+"'class='textList2'>Provincia:<span class='rojito'>*</span>"+parNull(value.province)+"</li>"+
+								"<li id='city"+i+"class='textList2'>Ciudad:<span class='rojito'>*</span>"+parNull(value.city)+"</li>"+
+								"<li id='phone"+i+"class='textList2'>Téfono:<span class='rojito'>*</span>"+parNull(value.phoneNumber)+"</li>"+
+								"<li id='zipCode"+i+"class='textList2'>Código Postal:<span class='rojito'>*</span>"+parNull(value.zipCode)+"</li>"+
+								"<li id='street"+i+"class='textList2'>Calle:<span class='rojito'>*</span>"+parNull(value.street)+"</li>"+
+								"<li id='number"+i+"class='textList2'>Altura:<span class='rojito'>*</span>"+parNull(value.number)+"</li>"+
+								"<li class='textList2'>"+
+									"<div class='row'>"+
+										"<div class='col-xs-4'>"+
+											"<p id='floor"+i+"'>Piso:"+parNull(value.floor)+"</p>"+
+										"</div>"+
+										"<div class='col-xs-4'>"+
+											"<p id='gate"+i+"'>Departamento:"+parNull(value.gate)+"</p>"+
+										"</div>"+	
+									"</div>"+
+								"</li>"+
+							"</ul>"+
+			              "</label>"+
+			              	"<div name= completarCollapse' class='col-xs-12 panel-collapse collapse' id='CD"+i+"'>"+
+					            "<div class='col-xs-6 col-xs-offset-3 listElem'>"+
+					        		"<button type='button' class='btn btn-lg btn-block btn-warning extra'>Completar Datos</button>"+
+					            "</div>"+
+					        "</div>"+
+			              "</div>");
+
+			$("#ADDRESS").append(aux);
+
+    		$("input[name='radios_addr']").change(function() {
+    	
+        		if($('#RadioAddr'+i).is(":checked")){
+        			if(parNull(value.province).localeCompare("----")==0||parNull(value.phoneNumber).localeCompare("----")==0||parNull(value.zipCode).localeCompare("----")==0||parNull(value.street).localeCompare("----")==0||parNull(value.number).localeCompare("----")==0||parNull(value.phoneNumber).localeCompare("----")==0){
+
+        				for(var x = 0; x<i; x++){
+        					$("#CD"+x).collapse('hide');
+
+        				}
+        				//addr_id=gid;
+        				$("#CD"+gid).collapse('show');
+
+        			}else{
+
+        				addr_gate= value.gate;
+						addr_floor= value.floor;
+						addr_heigth= value.number;
+						addr_street= value.street;
+						addr_phone= value.phoneNumber;
+						addr_city= value.city;
+						addr_prov= value.province;
+						addr_zipCode= value.zipCode;
+						addr_name= value.name;
+        				localStorage.setItem("addr_id"+username,'{"id":'+value.id+'}');
+        			}
+
+        		}		
+        		
+
+        	});    		
+		});
+	
+	}
+
+	function parNull(dato){
+		if(dato==null){
+			return "----"
+		}else{
+			return dato;
+		}
+	}
+
+
+
+	
+
+
+	
+
+    var token = get_cookie("authenticationToken");	
+	var username = get_cookie("username");
+	var cart_id;
+	var addr_id;
+	var address;
+	var creditCards;
+	var select_month = true;
+	var select_day = true;
+	var select_hour = true;
+	var Point1=true;
+	var Point2=true;
+	var Point3=true;
+	var has_addr = false;
+	var has_cart = false;
+	var valid_addr = false;
+	var valid_cart = false;
+	var cart_number;
+	var cart_date;
+	var cart_cod;
+	var valid_cart_number=false;
+	var valid_cart_date=false;
+	var valid_cart_cod=false;
+	var addr_gate = null;
+	var addr_floor = null;
+	var addr_heigth;
+	var addr_street;
+	var addr_phone;
+	var addr_city;
+	var addr_prov;
+	var addr_zipCode;
+	var addr_name;
+	var valid_addr_name=false;
+	var valid_addr_gate=true;
+	var valid_addr_floor=true;
+	var valid_addr_heigth=false;
+	var valid_addr_street=false;
+	var valid_addr_phone=false;
+	var valid_addr_city=false;
+	var valid_addr_prov=false;
+	var valid_addr_zipCode=false;
+
+	//TODO: Chequear
+	url="http://eiffel.itba.edu.ar/hci/service3/Account.groovy?method=GetAccount&username="+username+"&authentication_token="+token;
+	APIAction(url,getPersonalInfo);
+	url="http://eiffel.itba.edu.ar/hci/service3/Account.groovy?method=GetAllCreditCards&username="+username+"&authentication_token="+token;
+	APIAction(url,getCards);
+	url="http://eiffel.itba.edu.ar/hci/service3/Account.groovy?method=GetAllAddresses&username="+username+"&authentication_token="+token;
+	APIAction(url,gatAddr);
+
+	function qwe(){
+		if (localStorage.getItem('addr_id' + get_cookie('username')) == null){
+			window.setTimeout(qwe, 100);
+		}else{
+			//alert('listo');
+		}
+	}
+
+
+	$("#cart_number").focusout(function(){
+		 cart_number = document.getElementById("cart_number").value;
+		if(validate_number(cart_number)){
+			valid_cart_number=true;
+			$("#collapse_cart_number").collapse('hide');
+		}else{
+			$("#collapse_cart_number").collapse('show');
+		}
+	});
+	$("#cart_cod").focusout(function(){
+		 cart_cod = document.getElementById("cart_cod").value;
+		if(validate_cod(cart_cod)){
+			valid_cart_cod=true;
+			$("#collapse_cart_cod").collapse('hide');
+		}else{
+			$("#collapse_cart_cod").collapse('show');
+		}
+	});
+
+	$("#ADD_CART").on('click',function(){
+		var year;
+		var month;
+		month = $("#MONTH").parents(".dropdown").find("button").text();
+	  	year = $("#YEARS").parents(".dropdown").find("button").text();
+	  	var d = new Date();
+	  	if(month.localeCompare("Mes")==0 || year.localeCompare("Año")==0){
+	  		$("#collapse_cart_date").collapse('show');
+	  		valid_cart_date = false;
+	  	}else{
+	  		valid_cart_date=true;
+	  		if(d.getFullYear()==year){
+	  			if(d.getMonth()<=convertMonth(month)){
+	  				valid_cart_date=false;
+	  			}
+	  		}
+	  		else if(d.getFullYear()<year){
+	  			valid_date=false;
+	  		}
+	  	}
+	  	if(!valid_cart_date){
+	  		$("#collapse_cart_date").collapse('show');
+	  	}else{
+	  		if(valid_cart_date && valid_cart_cod && valid_cart_number){
+	  			$("#collapse_add_cart").collapse('hide');
+	  			cart_date=convertMonthToString(month)+year[2]+year[3];
+	  			valid_cart=true;
+	  			url='http://eiffel.itba.edu.ar/hci/service3/Account.groovy?method=CreateCreditCard&username='+username+'&authentication_token='+token+'&credit_card={"number":"'+cart_number+'","expirationDate":"'+cart_date+'","securityCode":"'+cart_cod+'"}';
+	  			APIAction(url,helppp2);
+
+	  		}else{
+	  		$("#collapse_add_cart").collapse('show');
+	  		}
+	  	}
+	});
+	
+	var states = function(arr) {
+		    var a = arr["states"];
+		    var i;
+		    for(i = 0; i < a.length; i++) {
+
+		        if(addr_prov.localeCompare(a[i].name)==0){
+		        	$("#collapse_addr_prov").collapse('hide');
+		        	addr_prov=a[i].stateId;      	
+		        	valid_addr_prov=true;
+		        	return true;
+		        }
+		    }
+		    $("#collapse_addr_prov").collapse('show');
+		    return false;
+    }
+
+    function validate_prov(){
+    	url="http://eiffel.itba.edu.ar/hci/service3/Common.groovy?method=GetAllStates";
+    	APIAction(url,states);
+    	
+    }
+    function validate_number(num){
+    	if(!num){
+    		return false;
+    	}
+    	var ini = num[0]+num[1];
+    	switch (ini){
+    		case "34":
+    		case "37":
+    			if(num.length==15){
+    				return /^([0-9]{15})$/g.test(num);
+    			}
+    			return false;
+    		case "36":
+    			if(num.length==16){
+    				return /^([0-9]{16})$/g.test(num);
+    			}
+    			return false;
+    		case "51":
+    		case "52":	
+    		case "53":
+    			if(num.length==16){
+    				return /^([0-9]{16})$/g.test(num);
+    			}
+    			return false;
+    		default:
+    			if(num[0]=="4"){
+    				if(num.length==16){
+    					return /^[0-9]+$/g.test(num);
+    				}
+    			}
+    			return false;
+    	}
+
+    	return false;
+    }
+    function helppp(arr){
+    	localStorage.setItem("addr_id"+get_cookie('username'),'{"id":'+arr["address"].id+'}');
+    	//addr_id = arr["address"].id;
+    }
+    function helppp2(arr){
+    	localStorage.setItem("cart_id"+ get_cookie('username'),'{"id":' + arr["creditCard"].id + '}');
+    	//cart_id = arr["creditCard"].id;
+    }
+    function validate_heigth(num){
+    	if(!num || num.length>6){
+    		return false;
+    	}
+    	return /^([0-9]{6})$/g.test(num);
+    }
+    function validate_floor(num){
+    	if(!num){
+    		return true;
+    	}
+    	if(num.length>2){
+    		return false;
+    	}
+    	return /^[0-9]+$/g.test(num);
+    }
+    function validate_gate(num){
+    	if(!num){
+    		return true;
+    	}
+    	if(num.length>2){
+    		return false;
+    	}
+    	return /^[a-zA-Z0-9]+$/g.test(num);
+    }
+
+    function validate_cod(num){
+    	if(!num){
+    		return false;
+    	}
+    	var init = cart_number[0]+cart_number[1];
+    	if(init.localeCompare("34")==0||init.localeCompare("37")==0){
+    		if(num.length!=4){
+    			return false;
+    		}
+    		return /^([0-9]{4})$/g.test(num);
+    	}
+    	if(num.length!=3){
+    		return false;
+    	}
+    	return /^([0-9]{3})$/g.test(num);
+    }
+    function validate_zipCod(num){
+    	if(!num || num.length>10){
+    		return false;
+    	}
+    	return /^[0-9]+$/g.test(num);
+    }
+    function validate_Names(name) {
+	    if (!name || name.length > 80) {
+	        return false;
+	    }
+
+	    return /[a-zA-Z0-9]/i.test(name);
+	}
+	function validate_phone(name) {
+	    if (!name || name.length > 25) {
+	        return false;
+	    }
+
+	    return /[a-zA-Z0-9]/i.test(name);
+	}
+
+	$("#addr_name").focusout(function(){
+		 addr_name = document.getElementById("addr_name").value;
+		if(validate_Names(addr_name)){
+			valid_addr_name=true;
+			$("#collapse_addr_name").collapse('hide');
+		}else{
+			$("#collapse_addr_name").collapse('show');
+		}
+	});
+
+    $("#addr_prov").focusout(function(){
+		addr_prov = document.getElementById("addr_prov").value;
+		validate_prov();
+		
+	});
+
+	$("#addr_city").focusout(function(){
+		 addr_city = document.getElementById("addr_city").value;
+		if(validate_Names(addr_city)){
+			valid_addr_city=true;
+			$("#collapse_addr_city").collapse('hide');
+		}else{
+			$("#collapse_addr_city").collapse('show');
+		}
+	});
+	$("#addr_street").focusout(function(){
+		 addr_street = document.getElementById("addr_street").value;
+		if(validate_Names(addr_street)){
+			valid_addr_street=true;
+			$("#collapse_addr_street").collapse('hide');
+		}else{
+			$("#collapse_addr_street").collapse('show');
+		}
+	});
+	$("#addr_phone").focusout(function(){
+		 addr_phone = document.getElementById("addr_phone").value;
+		if(validate_phone(addr_phone)){
+			valid_addr_phone=true;
+			$("#collapse_addr_phone").collapse('hide');
+		}else{
+			$("#collapse_addr_phone").collapse('show');
+		}
+	});
+	$("#addr_heigth").focusout(function(){
+		 addr_heigth = document.getElementById("addr_heigth").value;
+		if(validate_phone(addr_heigth)){
+			valid_addr_heigth=true;
+			$("#collapse_addr_heigth").collapse('hide');
+		}else{
+			$("#collapse_addr_heigth").collapse('show');
+		}
+	});
+	$("#addr_zipCode").focusout(function(){
+		 addr_zipCode = document.getElementById("addr_zipCode").value;
+		if(validate_zipCod(addr_zipCode)){
+			valid_addr_zipCode=true;
+			$("#collapse_addr_zipCode").collapse('hide');
+		}else{
+			$("#collapse_addr_zipCode").collapse('show');
+		}
+	});
+	$("#addr_floor").focusout(function(){
+		valid_addr_floor=false;
+		 addr_floor = document.getElementById("addr_floor").value;
+		if(validate_floor(addr_floor)){
+			valid_addr_floor=true;
+			$("#collapse_addr_floor").collapse('hide');
+			addr_floor='"'+addr_floor+'"';
+		}else{
+			$("#collapse_addr_floor").collapse('show');
+		}
+
+	});
+
+	$("#addr_gate").focusout(function(){
+		valid_addr_gate=false;
+		 addr_gate = document.getElementById("addr_gate").value;
+		if(validate_gate(addr_gate)){
+			valid_addr_gate=true;
+			$("#collapse_addr_gate").collapse('hide');
+			addr_gate='"'+addr_gate+'"';
+		}else{
+			$("#collapse_addr_gate").collapse('show');
+		}
+	});
+
+	$("#ADD_ADDR").on('click',function(){
+		if(valid_addr_name && valid_addr_phone && valid_addr_heigth && valid_addr_city && valid_addr_street && valid_addr_prov && valid_addr_gate && valid_addr_floor && valid_addr_zipCode){
+			$("#collapse_add_addr").collapse('hide');
+			valid_addr=true;
+
+			if(addr_floor==null){
+				url='http://eiffel.itba.edu.ar/hci/service3/Account.groovy?method=CreateAddress&username='+username+'&authentication_token='+token+'&address={"name":"'+addr_name+'","street":"'+addr_street+'","number":"'+addr_heigth+'","province":"'+addr_prov+'","city":"'+addr_city+'","zipCode":"'+addr_zipCode+'","phoneNumber":"'+addr_phone+'"}';
+				APIAction(url,helppp);
+			// console.log(url);
+			}else{
+			url='http://eiffel.itba.edu.ar/hci/service3/Account.groovy?method=CreateAddress&username='+username+'&authentication_token='+token+'&address={"name":"'+addr_name+'","street":"'+addr_street+'","number":"'+addr_heigth+'","floor":'+addr_floor+',"gate":'+addr_gate+',"province":"'+addr_prov+'","city":"'+addr_city+'","zipCode":"'+addr_zipCode+'","phoneNumber":"'+addr_phone+'"}';
+			// console.log(url);
+				APIAction(url,helppp);
+			}	
+
+
+	  		}else{
+	  			$("#collapse_add_addr").collapse('show');
+	  		}
+
+
+	});
+
+	$("#AD1").on('click',function(){
+		if(!(Point1 && Point2 && Point3)){
+			//alert("dddddd");
+			$("#collapse_comprar").collapse('show');
+			return;
+		}
+		if ($('#firstRadio').is(":checked")){
+			if (!has_addr) {
+				$("#collapse_comprar").collapse('show');
+				return;
+			}
+			address='{"name":"'+addr_name+'","street":"'+addr_street+'","number":"'+addr_heigth+'","province":"'+addr_prov+'","zipCode":"'+addr_zipCode+'","phoneNumber":"'+addr_phone+'", "floor":"'+addr_floor+'","gate":"'+addr_gate+'"}';
+			
+		}else{
+			if(valid_addr_name && valid_addr_phone && valid_addr_heigth && valid_addr_city && valid_addr_street && valid_addr_prov&& valid_addr_zipCode){
+				if(valid_addr){
+					address='{"name":"'+addr_name+'","street":"'+addr_street+'","number":"'+addr_heigth+'","province":"'+addr_prov+'","zipCode":"'+addr_zipCode+'","phoneNumber":"'+addr_phone+'","floor":"'+addr_floor+'","gate":"'+addr_gate+'"}';
+					
+				}else{
+					$("#collapse_add_addr").find('p').text("Es necesario agregar la dirección para seguir.");
+					$("#collapse_add_addr").collapse('show');
+					return;	
+				}
+			}else{
+
+				$("#collapse_comprar").collapse('show');
+				return;
+			}
+		}
+		if ($('#thirdRadio').is(":checked")){
+			creditCards=null;
+			cart_id=null;
+		}else{
+			if ($('#fifthRadio').is(":checked")){
+				if (!has_cart) {
+					$("#collapse_comprar").collapse('show');
+					return;
+				}
+				creditCards='{"number":"'+cart_number+'","expirationDate":"'+cart_date+'","securityCode":"'+cart_cod+'"}';
+			
+			}else{
+				var year;
+				var month;
+				month = $("#MONTH").parents(".dropdown").find("button").text();
+			  	year = $("#YEARS").parents(".dropdown").find("button").text();
+			  	var d = new Date();
+			  	if(month.localeCompare("Mes")==0 || year.localeCompare("Año")==0){
+			  		$("#collapse_cart_date").collapse('show');
+			  		valid_cart_date = false;
+			  	}else{
+			  		valid_cart_date=true;
+			  		if(d.getFullYear()==year){
+			  			if(d.getMonth()<=convertMonth(month)){
+			  				valid_cart_date=false;
+			  			}
+			  		}
+			  		else if(d.getFullYear()<year){
+			  			valid_date=false;
+			  		}
+			  	}
+			  	if(valid_cart_date && valid_cart_cod && valid_cart_number){
+			  		if(valid_cart){
+		  				$("#collapse_add_cart").collapse('hide');
+		  				$("#collapse_comprar").collapse('hide');
+		  				cart_date=convertMonthToString(month)+year[2]+year[3];
+		  				creditCards='{"number":"'+cart_number+'","expirationDate":"'+cart_date+'","securityCode":"'+cart_cod+'"}';
+		  			}else{
+		  				$("#collapse_add_cart").find('p').text("Es necesario agregar la tarjeta para seguir");
+		  				$("#collapse_add_cart").collapse('show');
+		  				$("#collapse_comprar").collapse('show');
+		  				return;
+		  			}	
+	  			}else{
+
+	  				$("#collapse_comprar").collapse('show');
+					return;
+	  			}
+					
+
+			}
+		}
+		if(!($("#drop-day").parents('.dropdown').hasClass('uncomplete'))){
+			select_day = true;
+		}
+		if(!($("#drop-month").parents('.dropdown').hasClass('uncomplete'))){
+			select_month = true;
+		}
+		if(!($("#drop-hour").parents('.dropdown').hasClass('uncomplete'))){
+			select_hour = true;
+		}
+		if(!(select_hour && select_month && select_day)){
+
+			$("#collapse_comprar").collapse('show');
+			return;
+		}
+		var buy_date= $("#but-month").text()+"-"+$("#but-day").text()+"-"+$("#but-hour").text();
+		localStorage.setItem("date"+username,buy_date);
+		localStorage.setItem("address"+username,address);
+		localStorage.setItem("creditCard"+username,creditCards);
+		//alert(creditCards);
+
+
+		//localStorage.setItem("addr_id"+username,'{"id":'+addr_id+'}');
+		//localStorage.setItem("cart_id"+username,'{"id":'+cart_id+'}');
+
+			
+		window.location='pagina_confirmacion.html';
+
+		
+		
+
+	});
+
+	$("#C1").on('click',function(){
+		window.location="cart.html";
+	});
+	
+	
+
+	$('input[name="radios"]').change( function() {
+		Point1=true;
+		$('#firstAccordion, #secondAccordion').collapse('hide');
+		
+
+	    if ($('#firstRadio').is(":checked")){
+
+	        $('#firstAccordion').collapse('show');
+
+	    } else {
+
+	        $('#firstAccordion').collapse('hide');
+	    }
+
+	    if ($('#secondRadio').is(":checked")){
+
+	        $('#secondAccordion').collapse('show');
+
+	    } else {
+
+	        $('secondAccordion').collapse('hide');
+	    }
+	});
+
+	$('input[name="radios2"]').change( function() {
+		Point2=true;
+		$('#thirdAccordion, #fouthAccordion').collapse('hide');
+
+	    if ($('#thirdRadio').is(":checked")){
+
+	        $('#thirdAccordion').collapse('show');
+
+	    } else {
+
+	        $('#thirdAccordion').collapse('hide');
+	    }
+	    if ($('#fourthRadio').is(":checked")){
+
+
+	        $('#fourthAccordion').collapse('show');
+
+	    } else {
+
+
+	        $('#fourthAccordion').collapse('hide');
+	    }
+
+	});
+	$('input[name="radios3"]').change( function() {
+		Point3=true;
+		$('#fifthAccordion, #sixthAccordion').collapse('hide');
+	    if ($('#fifthRadio').is(":checked")){
+
+	        $('#fifthAccordion').collapse('show');
+
+	    } else {
+
+	        $('#fifthAccordion').collapse('hide');
+	    }
+	    if ($('#sixthRadio').is(":checked")){
+
+	        $('#sixthAccordion').collapse('show');
+
+	    } else {
+
+	        $('#sixthAccordion').collapse('hide');
+	    }
+
+	   
+	});
+
+
+
+	$(".dropdown-menu").on('click','li',function(){
+		var selText = $(this).text();
+	  	$(this).parents('.dropdown').find('.dropdown-toggle').text(selText);
+	  	$(this).parents('.dropdown').removeClass('uncomplete');
+		
+	});
+});
+
+</script>
+</body>
+</html>

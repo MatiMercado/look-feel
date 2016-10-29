@@ -1,0 +1,141 @@
+
+.active
+{
+  display: block !important;
+  font-size: 13px;
+}
+
+.tab-pane{
+  display: none;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+div.row.spaced{
+	padding: 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+ ul.row.spaced{
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+a.editLink{
+	font-size: 10px;
+}
+
+.tab-content{
+  padding: 0% 5%;  
+}
+
+.nav-tabs{
+  background-color:#000000;
+
+}
+
+.nav-tabs > li > a{
+  border: medium none;
+  color:#fff;
+}
+
+.nav-tabs > li > a:hover{
+  background-color: #7D7D7D !important;
+  border: medium none;
+  border-radius: 0;
+  color:#fff;
+}
+
+.nav-tabs > li.active > a:hover{
+  color: white;
+  background-color: #7D7D7D;
+}
+
+/**
+ * VERIFICATION STYLES
+**/
+.datos_de_cuenta {
+  margin-left: 20px;
+  padding-left: 20px;
+  list-style-type: none;
+}
+.rojito {
+  color: red;
+}
+.listElem{
+  max-height: 300px;
+  overflow: scroll;
+}
+
+
+/**
+  * COMMON STYLES
+**/
+
+.centered{
+  text-align: center;
+}
+
+.extra{
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.page-title {
+  font-size: 24px;
+  padding-top: 0;
+  margin-top: 6px;
+  border-bottom: 1px solid #A8A8A8;
+}
+
+.page-subtitle {
+  font-size: 1.4em;
+  padding-top: 0;
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
+
+.page-sub-subtitle {
+  font-size: 1.2em;
+  padding-top: 0;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  font-weight: bold;
+}
+
+.tab-class {
+  font-size: 1em;
+  padding-top: 0;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  text-decoration: underline;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hr_horizontal {
+  border-color: #A8A8A8;
+  padding: 0;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.verticalLine {
+    border-right: 1px inset #A8A8A8;
+}
+
+ul.noBullets{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.center-vert {
+  padding-top: 20%;
+  margin-bottom: 3%
+}

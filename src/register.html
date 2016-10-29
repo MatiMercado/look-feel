@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>look&amp;feel</title>
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="register.css">
+
+
+<!-- ____________________________________________________ --><link href="sticky-footer-navbar.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    
+    <header id="content-top">
+
+
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a id="logo-box" class="navbar-brand verticalLine" href="index.html"><h1>look&amp;feel</h1></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            
+            <ul class="nav navbar-nav">
+              <li id="women"><a id="women-link" href="#">Mujeres</a></li>
+              <li id="men"><a id="men-link" href="#" class="verticalLine">Hombres</a></li>
+              <li id="girls"><a id="girls-link" href="#">Niñas</a></li>
+              <li id="boys" class="verticalLine"><a id="boys-link" href="#">Niños</a></li>
+              <li id="babies"><a id="babies-link" href="#">Bebés</a></li>
+            </ul>
+
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input id="search_key" type="text" class="form-control search-bar" placeholder="Buscar un producto">
+              </div>
+              <button id="search" type="button" class="btn btn-default">Ir</button>
+            </form>
+            
+            <ul class="nav navbar-nav navbar-right">
+              <li><a id="register" href="register.html">Registrarse</a></li>
+              <li class="verticalLine"><a id="login" href="ingresar.html">Ingresar</a></li>
+              <li><a id="cart-link" href="#"><img id="cart-img" src="img/cart.png" alt="carrito"></a></li>
+              <li id="fav-li"><a id="fav-link" href="#"><img id="fav-img" src="img/fav.png" alt="favoritos"></a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+  </header>
+
+<!-- ___________________________________________ -->
+
+<div class="container">
+	<div class="row">&nbsp;</div>
+	<div class="row">&nbsp;</div>
+	<div class="row">&nbsp;</div>
+	<div class="row">&nbsp;</div>
+	<div class="row">&nbsp;</div>
+</div>
+
+<div class="container">
+	<!-- Begin no js msg-->
+    <!-- ___________________________________________ -->
+    <noscript>
+      <div class="alert alert-danger" role="alert">
+       <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+       <span class="sr-only">Error:</span>
+        Es necesario activar JavaScript para que la web funcione correctamente.
+      </div>
+    </noscript>
+    <!-- End no js msg -->
+    <!-- ___________________________________________ -->
+	<div class="row">
+		<hr class="hr_horizontal">
+	</div>	
+	<div class="row" >
+		<div class="col-md-6 verticalLine">
+			<div class="registro thumbnail">
+				<h2 class="page-title">Registrarse</h2>
+					<p class="subtext2">Campos obligarotios(<span class="rojito">*</span>)</p>
+					<div class="row">
+						<div class="col-md-4">
+							<p class="question2"><strong>Nombre de Usuario:<span class="rojito">*</span></strong></p>
+						</div>
+						<div class="col-md-7 inputX">
+							<p><input id="username" class="form-control" type="text" name="Nombre" value=""></p>
+						</div>
+					</div>
+					<div class="col-xs-12 collapse" id="collapse_username">
+						<p class="rojito">El nombre de ususario debe contener entre 6 y 15 caracteres.</p>
+					</div>	
+					<div class="row">
+						<div class="col-md-4">
+							<p class="question2"><strong>Nombre/s:<span class="rojito">*</span></strong></p>
+						</div>
+						<div class="col-md-7 inputX">
+							<p><input id="fname" class="form-control" type="text" name="Nombre" value=""></p>
+						</div>
+					</div>
+					<div class="col-xs-12 collapse" id="collapse_fname">
+						<p class="rojito">El nombre no es válido</p>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<p class="question2"><strong>Apellido/s:<span class="rojito">*</span></strong></p>
+						</div>
+						<div class="col-md-7 inputX">
+							<p><input id="lname" class="form-control pull-right" type="text" name="Nombre" value=""></p>
+						</div>
+					</div>
+					<div class="col-xs-12 collapse" id="collapse_lname">
+						<p class="rojito">El apellido no es válido</p>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<p class="question2"><strong>Género:<span class="rojito">*</span></strong></p>
+						</div>
+						<div class="col-md-7 text4">
+							<label class="radio-inline"><input type="radio" name ="gender" id="FEM" >Femenino</label>
+							<label class="radio-inline"><input type="radio" name ="gender" id="MAS" >Masculino</label>
+						</div>
+					</div>
+					<div class="col-xs-12 collapse" id="collapse_gender">
+						<p class="rojito">Debe selecionar un género.</p>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<p class="question2"><strong>Fecha de Nacimiento:<span class="rojito">*</span></strong></p>
+						</div>
+						<div class="col-md-7" >
+							<div class="row">
+								<div class="col-xs-4 col-md-4">
+									<div class="dropdown">
+		  								<button class="btn btn-md dropdown-toggle btn-default" type="button" data-toggle="dropdown">Día
+		 								<span class="caret"></span></button>
+		 								<ul id="DAYS" class="dropdown-menu listElem">
+											
+										</ul>
+									</div>
+								</div>
+								<div class="col-xs-4 col-md-4">
+									<div class="dropdown">
+		  								<button class="btn btn-md dropdown-toggle btn-default" type="button" data-toggle="dropdown">Mes
+		 								<span class="caret"></span></button>
+		 								<ul id="MONTH" class="dropdown-menu listElem">
+											<li><a class="month1">Enero</a></li>
+											<li><a class="month3">Febrero</a></li>
+											<li><a class="month1">Marzo</a></li>
+											<li><a class="month2">Abril</a></li>
+											<li><a class="month1">Mayo</a></li>
+											<li><a class="month2">Junio</a></li>
+											<li><a class="month1">Julio</a></li>
+											<li><a class="month1">Agosto</a></li>
+											<li><a class="month2">Septiembre</a></li>
+											<li><a class="month1">Octubre</a></li>
+											<li><a class="month2">Noviembre</a></li>
+											<li><a class="month1">Diciembre</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-xs-4 col-md-4">
+									<div class="dropdown">
+		  								<button class="btn btn-md dropdown-toggle btn-default" type="button" data-toggle="dropdown">Año
+		 								<span class="caret"></span></button>
+		 								<ul id="YEARS" class="dropdown-menu listElem">
+											
+										</ul>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+					<div class="col-xs-12 collapse" id="collapse_date">
+						<p class="rojito">La fecha está incompleta.</p>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<p class="question2"><strong>Email:<span class="rojito">*</span></strong></p>
+						</div>
+						<div class="col-md-7 inputX">
+							<p><input id="email" class="form-control pull-right" type="text" name="Nombre" value=""></p>
+						</div>
+					</div>
+					<div class="col-xs-12 collapse" id="collapse_email">
+						<p class="rojito">El email ingresado no es válido.</p>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<p class="question2"><strong>DNI:<span class="rojito">*</span></strong></p>
+						</div>
+						<div class="col-md-7 inputX">
+							<p><input id="DNI" class="form-control pull-right" type="text" name="Nombre" value=""></p>
+						</div>
+					</div>
+					<div class="col-xs-12 collapse" id="collapse_DNI">
+						<p class="rojito">El DNI debe contener hasta 8 caracteres numéricos</p>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<p  class="question2"><strong>Contraseña:<span class="rojito">*</span></strong></p>
+						</div>
+						<div class="col-md-7 inputX">
+							<p><input id="pass1" class="form-control pull-right" type="password" name="Nombre" value=""></p>
+						</div>
+					</div>
+					<div class="col-xs-12 collapse" id="collapse_pass1">
+						<p class="rojito">La contraseña debe contener entre 8 y 15 caracteres.</p>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<p class="question2"><strong>Repetir Contraseña:<span class="rojito">*</span></strong></p>
+						</div>
+						<div class="col-md-7 inputX">
+							<p><input id="pass2" class="form-control pull-right" type="password" name="Nombre" value=""></p>
+						</div>
+					</div>
+					<div class="col-xs-12 collapse" id="collapse_pass2">
+						<p class="rojito">Las contraseñas no coinciden.</p>
+					</div>
+
+
+					<button type="button" class="btn btn-lg btn-block btn-success extra" id="AD1">Crear Cuenta</button>
+					<div class="col-xs-12 collapse" id="collapse_creat">
+						<p class="rojito centered">Faltan completar datos.</p>
+					</div>
+
+						<p class="subtext">*Más datos podrían ser solicitados al momento de realizar la compra. Estos pueden completarse la sección "Mi Perfil"</p>
+			</div>
+			
+		</div>
+		<div class="col-md-6">
+			<div class="PF">
+			<h3 class="page-subtitle">Preguntas Frecuentes</h3>
+				<p class="quetion1"><strong>¿Cuales son los medios de pago que pueden utilizarse?</strong><br></p>
+				<p class="resp"><em>Las compras se abonan con tarjeta o en efectivo.</em></p>
+				<p class="quetion1"><strong>Es la primera vez que realizo compras online ¿Qué necesito?</strong><br></p>
+				<p class="resp"><em>Contamos con tutoriales a modo de guía, los cuales puedenconsultar en cualquier momento presionando el botón "¿Cómo comprar? ubicado en la esquina inferior derecha de la pantalla.</em>"</p>
+				<p class="quetion1"><strong>¿Mis datos están protegidos?</strong><br></p>
+				<p class="resp"><em>Contamos con servicios que aseguran la máxima protección de sus datos.</em></p>
+			</div>
+			<button type="button" class="btn btn-md center-block btn-default moveButton" id="AD2">Ver Más</button>
+		</div>
+	</div>
+	<div class="row">
+		<hr class="hr_horizontal">
+	</div>	
+	<div class="row">
+		<h4 class="page-sub-subtitle centered">¿Por qué Registrarse?</h4>
+	</div>
+	<div class="row">
+		<div class="col-md-11 col-md-offset-1">
+			<ul class="row">
+
+				<li class="other1 col-md-6">Accedé a tu lista de favoritos.</li>
+				<li class="other2 col-md-6">Personalizá tu navegación en el sitio.</li>
+				<li class="other1 col-md-6">Accedé a tu perfil, revisa tus ultimas compras.</li>
+				<li class="other2 col-md-6">Recibí noticias de las ultimas ofertas y novedades.</li>
+			
+			</ul>
+		</div>
+	</div>
+</div>
+
+  <!-- ___________________________________________________ -->
+    <footer class="footer">
+      <div class="container footer-cont">
+
+        <div class="row">
+
+          <div class="col-xs-6 col-sm-6 col-md-8">
+            <div class="row">
+
+              <div class="col-xs-12 col-sm-12 col-md-6"> <!---->
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-6 col1">
+                    <div class="footer-text">
+                      <p class="text-muted">
+                        <b>Seguinos</b>
+                      </p>
+                        <ul>
+                          <li><a href="http://facebook.com" target="_blank">Facebook</a></li>
+                          <li><a href="http://twitter.com" target="_blank">Twitter</a></li>
+                          <li><a href="http://instagram.com" target="_blank">Instagram</a></li>
+                          <li><a href="https://plus.google.com" target="_blank">Google+</a></li>
+                          <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                
+
+                  <div class="col-xs-6 col-sm-6 col-md-6 col2">
+                    <div class="footer-text">
+                      <p class="text-muted">
+                        <b>Empresa</b>
+                      </p>
+                        <ul>
+                          <li><a href="en_construccion.html">¿Quiénes somos?</a></li>
+                          <li><a href="en_construccion.html">Términos y condiciones</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-xs-12 col-sm-12 col-md-6"> <!---->  
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-6 col3">
+                     <div class="footer-text">
+                      <p class="text-muted">
+                        <b>Ayuda</b>
+                      </p>
+                        <ul>
+                          <li><a href="en_construccion.html">Atención al cliente</a></li>
+                          <li><a href="faq.html">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                  
+                  <div class="col-xs-6 col-sm-6 col-md-6 col4">
+                   <div class="footer-text">
+                    <p class="text-muted">
+                      <b></b>
+                    </p>
+                      <ul>
+                        <li><a href="http://www.visa.com.ar/" target="_blank"></a></li>
+                        <li><a href="https://www.masterconsultas.com.ar/" target="_blank"></a></li>
+                        <li><a href="https://www.americanexpress.com/ar/" target="_blank"></a></li>
+                        <li><a href="http://www.mastercard.com/ar/consumidores/maestro.html" target="_blank"></a></li>
+                        <li><a href="http://www.cabal.coop/" target="_blank"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+          <div class="col-xs-6 col-sm-6 col-md-3 col-md-offset-1 -col5">
+            <div class="footer-buy-button">
+              <!--<p class="text-muted">-->
+                <button id="howtobuy" class="btn btn-default howtobuy" type="button">
+                  ¿Cómo comprar?
+                </button>
+              <!--</p>-->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
+
+<script src="index.js"></script>
+<script src="cookies.js"></script>
+<script src="API.js"></script>
+<script src="register.js"></script>
+<script src="cart.js"></script>
+<script src="validations.js"></script>
+
+<script>
+$(document).ready(function(){
+
+
+	 ///////////////////////////
+    floads();
+
+    if (isLogged()){
+      var fav_q = localStorage.getItem('countItem');
+      if (fav_q == null || fav_q == "null")
+        localStorage.setItem('countItem', 0);
+
+      $('#fav-link').append('(' + fav_q + ')');
+
+      getCartLength(
+        function(length){
+           $('#cart-link').append('(' + length + ')');
+        },
+        function(){
+          //KillLoader();
+        });
+
+    } else {
+      //KillLoader();
+    }
+    /////////////////////////////////
+
+	var flagF=0;
+	var flagO=0;
+	var username;
+	var lname;
+	var fname;
+	var gender;
+	var email;
+	var pass1;
+	var pass2;
+	var DNI;
+	var date;
+	var valid_username;
+	var valid_lname;
+	var valid_fname;
+	var valid_gender;
+	var valid_email;
+	var valid_pass1;
+	var valid_pass2;
+	var valid_DNI;
+	var valid_date;
+	putFecha();
+
+	var h = function(arr){
+		if (arr.hasOwnProperty('error')){
+		}else{
+			var a = arr["account"];
+			
+			//Login
+			afterReglogin(a.username, $('#pass1').val());
+		}
+	}
+
+
+	$(".dropdown-menu").on('click','li',function(){
+	  var selText = $(this).text();
+	  $(this).parents('.dropdown').find('.dropdown-toggle').text(selText);
+	});
+
+	$("#AD1").on('click', function(){
+		var day;
+		var month;
+		var year;
+		var date;
+	  	if(!$("#MAS").is(':checked') && !$("#FEM").is(':checked')){
+	  		$("#collapse_gender").collapse('show');
+	  		valid_gender=false;
+	  	}else{
+	  		valid_gender=true;
+	  		$("#collapse_gender").collapse('hide');
+	  		if($("#MAS").is(':checked')){
+	  			gender="M";
+	  		}else{
+	  			gender="F";
+	  		}
+	  	}
+	  	day = $("#DAYS").parents(".dropdown").find("button").text();
+	  	month = $("#MONTH").parents(".dropdown").find("button").text();
+	  	year = $("#YEARS").parents(".dropdown").find("button").text();
+	  	
+	  	var d = new Date();
+
+	  	if(day.localeCompare("Día")==0 || month.localeCompare("Mes")==0 || year.localeCompare("Año")==0){
+
+	  		$("#collapse_date").collapse('show');
+	  		valid_date = false;
+	  	}else{
+	  		valid_date = true;
+	  		if(d.getFullYear()-year ==15){
+	  			if(d.getMonth()==convertMonth(month)){
+	  				if(d.getDate()>day){
+	  					valid_date = false;
+	  				}
+	  			}else{
+	  				if(d.getMonth()>convertMonth(month)){
+	  					valid_date = false;
+	  				}
+	  			}
+	  		}else{
+	  			if (d.getFullYear()-year <15) {
+	  			 	valid_date=false;
+	  			 }
+	  		}
+	  		if (!valid_date) {
+	  			$("#collapse_date").find("p").text("Debe mayor de 16 años para registrarse.");
+	  			$("#collapse_date").collapse('show');
+
+	  		}else{
+	  			$("#collapse_date").collapse('hide');
+	  			date = year+"-"+convertMonth(month)+"-"+day;
+	  		}
+	  	}
+
+
+
+	  	if(valid_username && valid_fname && valid_lname && valid_gender && valid_date && valid_email && valid_pass2 && valid_pass1 && valid_DNI){
+
+	  		url ='http://eiffel.itba.edu.ar/hci/service3/Account.groovy?method=CreateAccount&account={"username":"'+username+'","password":"'+pass1+'","firstName":"'+fname+'","lastName":"'+lname+'","gender":"'+gender+'","identityCard":"'+DNI+'","email":"'+email+'","birthDate":"'+date+'"}';
+	  		APIAction(url,h);
+
+
+	  	}else{
+	  		$("#collapse_creat").collapse('show');
+	  	}
+
+
+
+			
+	});
+
+
+
+	$("#AD2").on('click', function(){
+			window.location="en_construccion.html";
+		});
+
+	$("#username").focusout(function(){
+		 username = document.getElementById("username").value;
+		if(validate_Username(username)){
+			valid_username=true;
+			$("#collapse_username").collapse('hide');
+		}else{
+			$("#collapse_username").collapse('show');
+		}
+	});
+
+	$("#fname").focusout(function(){
+		 fname = document.getElementById("fname").value;
+		if(validate_Names(fname)){
+			valid_fname=true;
+			$("#collapse_fname").collapse('hide');
+		}else{
+			$("#collapse_fname").collapse('show');
+		}
+	});
+
+	$("#lname").focusout(function(){
+		 lname = document.getElementById("lname").value;
+		if(validate_Names(lname)){
+			valid_lname=true;
+			$("#collapse_lname").collapse('hide');
+		}else{
+			$("#collapse_lname").collapse('show');
+		}
+	});
+
+	$("#email").focusout(function(){
+		 email = document.getElementById("email").value;
+		if(validate_Email(email)){
+			valid_email=true;
+			$("#collapse_email").collapse('hide');
+		}else{
+			$("#collapse_email").collapse('show');
+		}
+	});
+
+	$("#DNI").focusout(function(){
+		 DNI = document.getElementById("DNI").value;
+		if(validate_DNI(DNI)){
+			valid_DNI=true;
+			var newDNI = DNI.split('.');
+	  		 DNI = newDNI.join("");
+			$("#collapse_DNI").collapse('hide');
+		}else{
+			$("#collapse_DNI").collapse('show');
+		}
+	});
+
+	$("#pass1").focusout(function(){
+		 pass1 = document.getElementById("pass1").value;
+		if(validate_Password(pass1)){
+			valid_pass1=true;
+			$("#collapse_pass1").collapse('hide');
+		}else{
+			$("#collapse_pass1").collapse('show');
+		}
+	});
+	$("#pass2").focusout(function(){
+		 pass2 = document.getElementById("pass2").value;
+		if(pass1!=pass2){
+			$("#collapse_pass2").collapse('show');
+			valid_pass2=false;
+		}else{
+			valid_pass2=true;
+			$("#collapse_pass2").collapse('hide');
+		}
+	});
+
+
+
+
+
+
+
+
+
+});
+</script>
+
+</body>
+</html>

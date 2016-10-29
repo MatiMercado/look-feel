@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="Vibracion">Vibrate</string>
+    <string name="Notificaciones">Notifications</string>
+    <string name="select_lan">Language</string>
+    <string name="spanish">Spanish</string>
+    <string name="English">English</string>
+    <string name="select_language">Select Language</string>
+    <string name="pref_header_notifications">Notifications</string>
+    <string name="tono">Tune</string>
+
+    <string-array name="listOptions">
+        <item>Spanish</item>
+        <item>English</item>
+    </string-array>
+
+    <string-array name="listValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+
+        <string name="app_name">look&amp;feel</string>
+        <!--Not declared by me-->
+        <string name="navigation_drawer_open">Open navigation drawer</string>
+        <string name="navigation_drawer_close">Close navigation drawer</string>
+
+        <string name="action_settings">Settings</string>
+
+
+        <string name="title_activity_login">Sign in</string>
+
+        <!-- Strings related to login -->
+        <string name="prompt_email">User</string>
+        <string name="prompt_password">Password</string>
+        <string name="action_sign_in">Sign in</string>
+        <string name="action_sign_in_short">Sign in</string>
+        <string name="error_invalid_email">This user is invalid</string>
+        <string name="error_invalid_password">This password is too short</string>
+        <string name="error_incorrect_password">This password is incorrect</string>
+        <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">Contacts permissions are needed for providing email
+        completions.
+    </string>
+    <string name="title_activity_home">Home</string>
+    <string name="order_tickerText">An order has been updated.</string>
+
+    <string name="order_contentTitle">look&amp;feel</string>
+    <string name="order_contentText">Access to your buys!</string>
+    <string name="title_activity_profile">Settings</string>
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_header_data_sync">My Purchases</string>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+
+    <string name="help_how_to_buy">How to Buy?</string>
+    <string-array name="help_options">
+        <item>Who are we?</item>
+        <item>Customer Care</item>
+        <item>Frequent Questions</item>
+    </string-array>
+
+    <!-- *************************** -->
+    <string name="search_title">Search a Product</string>
+    <string name="search_hint">Search a Product</string>
+    <string name="search_results">Search Results</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_search_results">Search Results</string>
+    <string name="tab_title_search_results">Products</string>
+    <string name="tab_title_new">New</string>
+    <string name="tab_title_deals">Deals</string>
+    <string name="element_text">Element</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="outstanding">Highlights</string>
+    <string name="offers">Deals</string>
+
+    <string name="signin">Sing in</string>
+
+    <string name="order_state_confirmed">C</string>
+    <string name="order_state_transported">T</string>
+    <string name="order_state_delivered">E</string>
+    <string name="order_state_confirmed_long">Confirmed</string>
+    <string name="order_state_transported_long">Transported</string>
+    <string name="order_state_delivered_long">Delivered</string>
+    <string name="title_activity_purchases_activity">My Purchases</string>
+    <string name="purchase_detail_price_title">Total Price: </string>
+    <string name="title_activity_purchase_detail_activity">Purchase Details:</string>
+    <string name="purchase_detail_date_confirmed_title">Date Confirmed: </string>
+    <string name="purchase_detail_date_transported_title">Date Transported: </string>
+    <string name="purchase_detail_date_delivered_title">Date Delivered: </string>
+    <string name="purchase_detail_address_name_title">Delivery Address: </string>
+    <string name="purchase_detail_province_title">Province: </string>
+    <string name="purchase_detail_city_title">City: </string>
+    <string name="order_detail_telephone_title">Phone: </string>
+    <string name="order_detail_zip_code_title">Zip Code: </string>
+    <string name="order_detail_street_title">Street: </string>
+    <string name="order_detail_number_title">Height: </string>
+    <string name="order_detail_floor_title">Flor: </string>
+    <string name="order_detail_door_title">Department: </string>
+    <string name="brand_title">Brand</string>
+    <string name="description_title">Description</string>
+    <string name="product_sizes_title">Sizes</string>
+    <string name="product_colors_title">Colors</string>
+    <string name="recommended_title">Recommendations</string>
+    <string name="product_detail">Product Details</string>
+
+    <string name="home">Home</string>
+    <string name="tools">Configurations</string>
+    <string name="help">Help and Contact</string>
+    <string name="women">Women</string>
+    <string name="men">Men</string>
+    <string name="girl">Girls</string>
+    <string name="boy">Boys</string>
+    <string name="baby">Babies</string>
+    <string name="profile">My Profile</string>
+    <string name="fname_user">Android Studio</string>
+    <string name="email_user">android.studio@android.com</string>
+
+
+    <string name="category_women_title">Women</string>
+    <string name="categories_title">Categories</string>
+    <string name="category_kid_title">Babies</string>
+    <string name="subcategories_title">Subcategories</string>
+    <string name="subsubcategories_title">Sub-Subcategories</string>
+    <string name="category_men_title">Men</string>
+    <string name="category_girls_title">Girls</string>
+    <string name="category_boys_title">Boys</string>
+    <string name="Buys">My Purchases</string>
+    <string name="Close_session">Sing Out</string>
+    <string name="products_not_found">There are no products that meet the search criteria.</string>
+    <string name="Construction">Application in Construction.</string>
+    <string name="User">User:</string>
+    <string name="register_user">User Registered</string>
+</resources>

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>look&amp;feel</title>
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="profile.css">
+	<link rel="stylesheet" href="finalizar_compra.css">
+
+<!-- ____________________________________________________ --><link href="sticky-footer-navbar.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    
+    <header id="content-top">
+
+
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a id="logo-box" class="navbar-brand verticalLine" href="index.html"><h1>look&amp;feel</h1></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            
+            <ul class="nav navbar-nav">
+              <li id="women"><a id="women-link" href="#">Mujeres</a></li>
+              <li id="men"><a id="men-link" href="#" class="verticalLine">Hombres</a></li>
+              <li id="girls"><a id="girls-link" href="#">Niñas</a></li>
+              <li id="boys" class="verticalLine"><a id="boys-link" href="#">Niños</a></li>
+              <li id="babies"><a id="babies-link" href="#">Bebés</a></li>
+            </ul>
+
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input id="search_key" type="text" class="form-control search-bar" placeholder="Buscar un producto">
+              </div>
+              <button id="search" type="button" class="btn btn-default">Ir</button>
+            </form>
+            
+            <ul class="nav navbar-nav navbar-right">
+              <li><a id="register" href="register.html">Registrarse</a></li>
+              <li class="verticalLine"><a id="login" href="ingresar.html">Ingresar</a></li>
+              <li><a id="cart-link" href="#"><img id="cart-img" src="img/cart.png" alt="carrito"></a></li>
+              <li id="fav-li"><a id="fav-link" href="#"><img id="fav-img" src="img/fav.png" alt="favoritos"></a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+  </header>
+
+<!-- ___________________________________________ -->
+	
+	<div class="container">
+		<div class="row">&nbsp;</div>
+		<div class="row">&nbsp;</div>
+		<div class="row">&nbsp;</div>
+		<div class="row">&nbsp;</div>
+		<div class="row">&nbsp;</div>
+	</div>
+
+	<div class="container">
+		<!-- Begin no js msg-->
+	    <!-- ___________________________________________ -->
+	    <noscript>
+	      <div class="alert alert-danger" role="alert">
+	       <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+	       <span class="sr-only">Error:</span>
+	        Es necesario activar JavaScript para que la web funcione correctamente.
+	      </div>
+	    </noscript>
+	    <!-- End no js msg -->
+	    <!-- ___________________________________________ -->
+		<div class = "row spaced">
+			<div class = "col-xs-6">
+				<h2 class="page-title"> Modificar Datos de Domicilio</h2>
+			</div>
+		</div>
+		<div class="row">
+	    	<div class="col-xs-8 col-xs-offset-3 datos_de_cuenta thumbnail">
+	    		<div class="row spaced">
+					<div class="col-xs-2">
+						<p class="question2">Nombre:<span class="rojito">*</span></p>
+					</div>
+					<div class="col-xs-9">
+						<p><input id="addr_name" class="form-control pull-right" type="text" name="Nombre" value=""></p>
+					</div>
+				</div>
+				<div class="col-xs-12 collapse" id="collapse_addr_name">
+					<p class="rojito">El nombre es inválido.</p>
+				</div>
+	      		<div class="row spaced">
+					<div class="col-xs-2">
+						<p class="question2">Provincia:<span class="rojito">*</span></p>
+					</div>
+					<div class="col-xs-9">
+						<p><input id="addr_prov" class="form-control pull-right" type="text" name="Nombre" value=""></p>
+					</div>
+				</div>
+				<div class="col-xs-12 collapse" id="collapse_addr_prov">
+					<p class="rojito">La provincia no es válida</p>
+				</div>
+				<div class="row spaced">
+					<div class="col-xs-2">
+						<p class="question2">Ciudad:<span class="rojito">*</span></p>
+					</div>
+					<div class="col-xs-9">
+						<p><input id="addr_city" class="form-control pull-right" type="text" name="Nombre" value=""></p>
+					</div>
+				</div>
+				<div class="col-xs-12 collapse" id="collapse_addr_city">
+					<p class="rojito">La ciudad no es válida</p>
+				</div>
+				<div class="row spaced">
+					<div class="col-xs-2">
+						<p class="question2">Teléfono:<span class="rojito">*</span></p>
+					</div>
+					<div class="col-xs-9">
+						<p><input id="addr_phone" class="form-control pull-right" type="text" name="Nombre" value=""></p>
+					</div>
+				</div>
+				<div class="col-xs-12 collapse" id="collapse_addr_phone">
+					<p class="rojito">El teléfono no debe contener ni '011' ni '-'.</p>
+				</div>
+				<div class="row spaced">
+					<div class="col-xs-2">
+						<p class="question2">Código Postal:<span class="rojito">*</span></p>
+					</div>
+					<div class="col-xs-9">
+						<p><input id="addr_zipCode" class="form-control pull-right" type="text" name="Nombre" value=""></p>
+					</div>
+				</div>
+				<div class="col-xs-12 collapse" id="collapse_addr_zipCode">
+					<p class="rojito">El código postal es inválido</p>
+				</div>
+				<div class="row spaced">
+					<div class="col-xs-2">
+						<p class="question2">Calle:<span class="rojito">*</span></p>
+					</div>
+					<div class="col-xs-9">
+						<p><input id="addr_street" class="form-control pull-right" type="text" name="Nombre" value=""></p>
+					</div>
+				</div>
+				<div class="col-xs-12 collapse" id="collapse_addr_street">
+					<p class="rojito">La calle es inválida.</p>
+				</div>
+				<div class="row spaced">
+					<div class="col-md-2">
+						<p class="question2">Altura:<span class="rojito">*</span></p>
+					</div>
+					<div class="col-md-9">
+						<p><input id="addr_heigth" class="form-control pull-right" type="text" name="Nombre" value=""></p>
+					</div>
+				</div>
+				<div class="col-xs-12 collapse" id="collapse_addr_heigth">
+					<p class="rojito">La altura es inválida.</p>
+				</div>
+				<div class="row spaced">
+					<div class="col-md-2">
+						<p class="question2">Piso:</p>
+					</div>
+					<div class="col-md-3">
+						<p><input id="addr_floor" class="form-control pull-right" type="text" name="Nombre" value=""></p>
+					</div>
+					<div class="col-md-3 ">
+						<p class="question2">Departamento:</p>
+					</div>
+					<div class="col-md-3">
+						<p><input id="addr_gate" class="form-control pull-right" type="text" name="Nombre" value=""></p>
+					</div>
+				</div>
+				<div class="col-xs-12 collapse" id="collapse_addr_floor">
+					<p class="rojito">El piso o el departamento son inválidos.</p>
+				</div>
+				<div class="row">
+	       			<div class="col-xs-6">
+	       				<button id="ADD_ADDR" type='button' class='btn btn-sm btn-block btn-success extra'>Confirmar</button>
+	       			</div>
+	       			<div class="col-xs-6">			    				
+							<button type="button" class="btn btn-sm btn-block btn-danger delete-order extra" id="modificar-cancel">Cancelar</button>
+					</div>
+	       		</div>
+	       		<div class="col-xs-12 collapse" id="collapse_add_addr">
+					<p class="rojito centered">Faltan completar datos.</p>
+				</div>
+	    	</div>
+		</div>
+	</div>
+<!-- ___________________________________________________ -->
+    <footer class="footer">
+      <div class="container footer-cont">
+
+        <div class="row">
+
+          <div class="col-xs-6 col-sm-6 col-md-8">
+            <div class="row">
+
+              <div class="col-xs-12 col-sm-12 col-md-6"> <!---->
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-6 col1">
+                    <div class="footer-text">
+                      <p class="text-muted">
+                        <b>Seguinos</b>
+                      </p>
+                        <ul>
+                          <li><a href="http://facebook.com" target="_blank">Facebook</a></li>
+                          <li><a href="http://twitter.com" target="_blank">Twitter</a></li>
+                          <li><a href="http://instagram.com" target="_blank">Instagram</a></li>
+                          <li><a href="https://plus.google.com" target="_blank">Google+</a></li>
+                          <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                
+
+                  <div class="col-xs-6 col-sm-6 col-md-6 col2">
+                    <div class="footer-text">
+                      <p class="text-muted">
+                        <b>Empresa</b>
+                      </p>
+                        <ul>
+                          <li><a href="en_construccion.html">¿Quiénes somos?</a></li>
+                          <li><a href="en_construccion.html">Términos y condiciones</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-xs-12 col-sm-12 col-md-6"> <!---->  
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-6 col3">
+                     <div class="footer-text">
+                      <p class="text-muted">
+                        <b>Ayuda</b>
+                      </p>
+                        <ul>
+                          <li><a href="en_construccion.html">Atención al cliente</a></li>
+                          <li><a href="faq.html">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                  
+                  <div class="col-xs-6 col-sm-6 col-md-6 col4">
+                   <div class="footer-text">
+                    <p class="text-muted">
+                      <b></b>
+                    </p>
+                      <ul>
+                        <li><a href="http://www.visa.com.ar/" target="_blank"></a></li>
+                        <li><a href="https://www.masterconsultas.com.ar/" target="_blank"></a></li>
+                        <li><a href="https://www.americanexpress.com/ar/" target="_blank"></a></li>
+                        <li><a href="http://www.mastercard.com/ar/consumidores/maestro.html" target="_blank"></a></li>
+                        <li><a href="http://www.cabal.coop/" target="_blank"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+          <div class="col-xs-6 col-sm-6 col-md-3 col-md-offset-1 -col5">
+            <div class="footer-buy-button">
+              <!--<p class="text-muted">-->
+                <button id="howtobuy" class="btn btn-default howtobuy" type="button">
+                  ¿Cómo comprar?
+                </button>
+              <!--</p>-->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
+
+
+<script src="index.js"></script>
+<script src="API.js"></script>
+<script src="cookies.js"></script>
+<script src="cart.js"></script>
+<script src="validations.js"></script>
+
+<script>
+	
+	$( document ).ready(function() {
+
+	///////////////////////////
+    floads();
+
+    if (isLogged()){
+      var fav_q = localStorage.getItem('countItem');
+      if (fav_q == null || fav_q == "null")
+        localStorage.setItem('countItem', 0);
+
+      $('#fav-link').append('(' + fav_q + ')');
+
+      getCartLength(
+        function(length){
+           $('#cart-link').append('(' + length + ')');
+        },
+        function(){
+          //KillLoader();
+        });
+
+    } else {
+      //KillLoader();
+    }
+    /////////////////////////////////
+
+		/* Variables used for validation */
+
+		//var cart_id;
+		var addr_id;
+		var address;
+		//var creditCards;
+		//var select_month = true;
+		//var select_day = true;
+		//var select_hour = true;
+		var valid_addr = true;
+		//var valid_cart = true;
+		//var cart_number;
+		//var cart_date;
+		//var cart_cod;
+		//var valid_cart_number=true;
+		//var valid_cart_date=true;
+		//var valid_cart_cod=true;
+		var addr_gate;
+		var addr_floor;
+		var addr_heigth;
+		var addr_street;
+		var addr_phone;
+		var addr_city;
+		var addr_prov;
+		var addr_zipCode;
+		var addr_name;
+		var valid_addr_name=true;
+		var valid_addr_gate=true;
+		var valid_addr_floor=true;
+		var valid_addr_heigth=true;
+		var valid_addr_street=true;
+		var valid_addr_phone=true;
+		var valid_addr_city=true;
+		var valid_addr_prov=true;
+		var valid_addr_zipCode=true;
+		
+		initializeStates();
+
+		/* Load Default Values */
+		$("#addr_name").attr('value', getParameterByName('name'));
+		$("#addr_prov").attr('value', getParameterByName('province'));
+		$("#addr_city").attr('value', getParameterByName('city'));
+		$("#addr_phone").attr('value', getParameterByName('phoneNumber'));
+		$("#addr_zipCode").attr('value', getParameterByName('zipCode'));
+		$("#addr_street").attr('value', getParameterByName('street'));
+		$("#addr_heigth").attr('value', getParameterByName('number'));
+		
+		if(getParameterByName('floor') != "---")
+			$("#addr_floor").attr('value', getParameterByName('floor'));
+		if(getParameterByName('gate')!= "---")
+			$("#addr_gate").attr('value', getParameterByName('gate'));
+
+		/* Load New Address Button Events*/
+		$("#addr_name").focusout(function(){
+			valid_addr_name = false;
+			addr_name = document.getElementById("addr_name").value;
+			if(validate_Names(addr_name)){
+				valid_addr_name=true;
+				$("#collapse_addr_name").collapse('hide');
+			}else{
+				$("#collapse_addr_name").collapse('show');
+			}
+		});
+
+		var states = function(arr) {
+		    var a = arr["states"];
+		    var i;
+		    
+		    for(i = 0; i < a.length; i++) {
+		        if(addr_prov.localeCompare(a[i].name)==0){
+		            $("#collapse_addr_prov").collapse('hide');
+		            addr_prov=a[i].stateId;
+		            valid_addr_prov=true;
+		            return true;
+		        }
+		    }
+		    $("#collapse_addr_prov").collapse('show');
+		    return false;
+		}
+
+		function validate_prov(){
+		    url="http://eiffel.itba.edu.ar/hci/service3/Common.groovy?method=GetAllStates";
+		    APIAction(url,states);
+		    
+		}
+
+
+	    $("#addr_prov").focusout(function(){
+	    	valid_addr_prov = false;
+			addr_prov = document.getElementById("addr_prov").value;
+			//addr_prov = $("#addr_prov").val();
+			validate_prov();
+		});
+
+		$("#addr_city").focusout(function(){
+			valid_addr_city = false;
+			addr_city = document.getElementById("addr_city").value;
+			if(validate_Names(addr_city)){
+				valid_addr_city=true;
+				$("#collapse_addr_city").collapse('hide');
+			}else{
+				$("#collapse_addr_city").collapse('show');
+			}
+		});
+		$("#addr_street").focusout(function(){
+			valid_addr_street = false;
+			addr_street = document.getElementById("addr_street").value;
+			if(validate_Names(addr_street)){
+				valid_addr_street=true;
+				$("#collapse_addr_street").collapse('hide');
+			}else{
+				$("#collapse_addr_street").collapse('show');
+			}
+		});
+		$("#addr_phone").focusout(function(){
+			valid_addr_phone = false;
+			addr_phone = document.getElementById("addr_phone").value;
+			if(validate_phone(addr_phone)){
+				valid_addr_phone=true;
+				$("#collapse_addr_phone").collapse('hide');
+			}else{
+				$("#collapse_addr_phone").collapse('show');
+			}
+		});
+		$("#addr_heigth").focusout(function(){
+			valid_addr_heigth = false;
+			addr_heigth = document.getElementById("addr_heigth").value;
+			if(validate_phone(addr_heigth)){
+				valid_addr_heigth=true;
+				$("#collapse_addr_heigth").collapse('hide');
+			}else{
+				$("#collapse_addr_heigth").collapse('show');
+			}
+		});
+		$("#addr_zipCode").focusout(function(){
+			valid_addr_zipCode = false;
+			addr_zipCode = document.getElementById("addr_zipCode").value;
+			if(validate_zipCod(addr_zipCode)){
+				valid_addr_zipCode=true;
+				$("#collapse_addr_zipCode").collapse('hide');
+			}else{
+				$("#collapse_addr_zipCode").collapse('show');
+			}
+		});
+		$("#addr_floor").focusout(function(){
+			valid_addr_floor = false;
+			addr_floor = document.getElementById("addr_floor").value;
+			if(validate_floor(addr_floor)){
+				valid_addr_floor=true;
+				$("#collapse_addr_floor").collapse('hide');
+			}else{
+				$("#collapse_addr_floor").collapse('show');
+			}
+		});
+
+		$("#addr_gate").focusout(function(){
+			valid_addr_gate = false;
+			addr_gate = document.getElementById("addr_gate").value;
+			if(validate_gate(addr_gate)){
+				valid_addr_gate=true;
+				$("#collapse_addr_gate").collapse('hide');
+			}else{
+				$("#collapse_addr_gate").collapse('show');
+			}
+		});
+
+		$("#ADD_ADDR").on('click',function(){
+
+			var username = get_cookie('username');
+			var token = get_cookie('authenticationToken');
+			
+			if(valid_addr_name && valid_addr_phone && valid_addr_heigth && valid_addr_city && valid_addr_street && valid_addr_prov && valid_addr_gate && valid_addr_floor && valid_addr_zipCode){
+				$("#collapse_add_addr").collapse('hide');
+				valid_addr=true;
+				
+				var name = $("#addr_name").val();
+				
+				var province = ProvToCode($("#addr_prov").val());
+				
+				var city = $("#addr_city").val();
+				var phoneNumber = $("#addr_phone").val();
+				var zipCode = $("#addr_zipCode").val();
+				var street = $("#addr_street").val();
+				var number = $("#addr_heigth").val();
+
+				var floor = $("#addr_floor").val();
+				var gate = $("#addr_gate").val();
+				if(floor == "")
+					floor = null;
+				if(gate == "")
+					gate = null;
+
+				var f = function(arr){
+					window.location = "profile.html?activeTab=domicilios";
+		   		};
+
+		   		var getAddrByName = function(arr){
+					
+					var addrID = arr["addresses"];
+					var url2;
+
+					url2 = 'http://eiffel.itba.edu.ar/hci/service3/Account.groovy?method=UpdateAddress&username='+username+'&authentication_token='+token+'&address={"id":'+addrID[0].id+',"name":"'+name+'","street":"'+street+'","number":"'+number+'","province":"'+province+'","city":"'+city+'","zipCode":"'+zipCode+'","phoneNumber":"'+phoneNumber+'","floor":"'+floor+'","gate":"'+gate+'"}';
+
+					if(floor == null || gate == null){
+						url2 = 'http://eiffel.itba.edu.ar/hci/service3/Account.groovy?method=UpdateAddress&username='+username+'&authentication_token='+token+'&address={"id":'+addrID[0].id+',"name":"'+name+'","street":"'+street+'","number":"'+number+'","province":"'+province+'","city":"'+city+'","zipCode":"'+zipCode+'","phoneNumber":"'+phoneNumber+'"}';
+					}
+
+			
+					APIAction(url2,f);
+		   		};
+
+		   		var url = 'http://eiffel.itba.edu.ar/hci/service3/Account.groovy?method=GetAddressesByName&username='+username+'&authentication_token='+token+'&name='+getParameterByName('name');
+				
+
+				APIAction(url,getAddrByName);
+
+
+	  		}else{
+	  			$("#collapse_add_addr").collapse('show');
+	  		}
+
+		});
+
+		/* Buttons */
+		$("#modificar-cancel").on('click', function(){
+			window.location = "profile.html?activeTab=domicilios";
+		});
+
+	});	
+</script>
+</body>
+</html>

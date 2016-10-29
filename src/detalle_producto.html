@@ -1,0 +1,495 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>look&amp;feel</title>
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="detalle_producto.css">
+   <!-- ____________________________________________________ --><link href="sticky-footer-navbar.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    
+    <header id="content-top">
+
+
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a id="logo-box" class="navbar-brand verticalLine" href="index.html"><h1>look&amp;feel</h1></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            
+            <ul class="nav navbar-nav">
+              <li id="women"><a id="women-link" href="#">Mujeres</a></li>
+              <li id="men"><a id="men-link" href="#" class="verticalLine">Hombres</a></li>
+              <li id="girls"><a id="girls-link" href="#">Niñas</a></li>
+              <li id="boys" class="verticalLine"><a id="boys-link" href="#">Niños</a></li>
+              <li id="babies"><a id="babies-link" href="#">Bebés</a></li>
+            </ul>
+
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input id="search_key" type="text" class="form-control search-bar" placeholder="Buscar un producto">
+              </div>
+              <button id="search" type="button" class="btn btn-default">Ir</button>
+            </form>
+            
+            <ul class="nav navbar-nav navbar-right">
+              <li><a id="register" href="register.html">Registrarse</a></li>
+              <li class="verticalLine"><a id="login" href="ingresar.html">Ingresar</a></li>
+              <li><a id="cart-link" href="#"><img id="cart-img" src="img/cart.png" alt="carrito"></a></li>
+              <li id="fav-li"><a id="fav-link" href="#"><img id="fav-img" src="img/fav.png" alt="favoritos"></a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+  </header>
+<!-- ___________________________________________ -->
+
+	<!-- Navigation Bar -->
+	<div class="container">
+		<!-- Begin no js msg-->
+    <!-- ___________________________________________ -->
+    <noscript>
+      <div class="alert alert-danger" role="alert">
+       <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+       <span class="sr-only">Error:</span>
+        Es necesario activar JavaScript para que la web funcione correctamente.
+      </div>
+    </noscript>
+    <!-- End no js msg -->
+    <!-- ___________________________________________ -->
+
+		<div class="row"></div> 
+		<div class="row"></div>
+		<div class="row"></div>
+		<div class="row"></div>
+	</div>
+
+
+	<div>
+		<ol class="breadcrumb breadcrumb_own">
+		</ol>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<h2 class="page-title mov-margin">Detalle de producto</h2>
+		</div>
+		<div class="row">
+			<div class="col-md-7">
+				<hr class="hr_horizontal2">
+			</div>
+		</div>
+		<div class="row">
+		
+				<div class="col-md-1">
+					<div id="FOTOS"class="row tipoZ">
+						
+					</div>
+
+				</div>		
+				
+			<div class="col-md-3 thumbnail imagenPrincipal">
+				<img src="img/img_not_available.png" id="IMGX" class="imagen" alt="Imagen Producto"/>
+			</div>
+			<div class="col-md-3 tipoX">
+				<div class="row">
+					<div class="col-md-12">
+						<h3 id="TITLE" class="title2 titleAux"></h3>
+						<h5 id="SUBTITLE1"><br></h5>
+						<p><br><strong>Descripción:</strong></p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-11">
+						<ul class="myList">
+							<li id="COMP"class="textList">Composición:</li>
+							<li> 
+								<div class="row">
+									<div class="col-md-4">
+										<p >Color:</p>
+									</div>
+									<div class="col-md-6">
+										<div class="dropdown">
+					  						<button class="btn btn-md btn-default dropdown-toggle" type="button" data-toggle="dropdown"><span class="textoChico">Seleccione un Color</span>
+					 						<span class="caret"></span></button>
+					 						<ul id="COLOR1" class="dropdown-menu">
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="textList">Corte:</li>
+							<li class="textList">Detalles:</li>
+
+							<li> 
+								<div class="row">
+									<div class="col-md-4">
+										<p>Talle:</p>
+									</div>
+									<div class="col-md-6">
+										<div class="dropdown">
+											<button class="btn btn-md btn-default dropdown-toggle" type="button" data-toggle="dropdown"><span class="textoChico">Seleccione un Talle</span>
+											<span class="caret"></span></button>
+											<ul id="TALLE1" class="dropdown-menu">
+					
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>	
+			</div>
+			<div class="col-md-4 thumbnail aux1">
+				<div class="row aux3">
+					<h3 id="TITLE2" class="titleAux"></h3>
+					<h6 id="SUBTITLE2"><br></h6>
+					<p id="PRICE" class="titleAux"><strong> </strong></p>
+				</div>
+				<div class="row separatorLine">
+					<p id="TALLE2">Talle:<span class="label label-default textoGrande"></span></p>							
+				</div>
+				<div class="row aux2">
+					<p id="COLOR2">Color:<span class="label label-default textoGrande"></span></p>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<p>Cantidad:</p>
+					</div>
+					<div class="col-md-7">
+						<div class="dropdown">
+							<button class="btn btn-md btn-default dropdown-toggle" type="button" data-toggle="dropdown"><span class="textoChico">Seleccione una Cantidad</span>
+							<span class="caret"></span></button>
+							<ul id="item_quantity" class="dropdown-menu">
+
+								<li><a>1</a></li>
+								<li><a>2</a></li>
+								<li><a>3</a></li>
+								<li><a>4</a></li>
+								<li><a>5</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row aux4">
+						<button type="button" name="XXX" class="btn btn-lg btn-block btn-primary" id="DP1">Agregar al Carrito</button>
+				</div>
+				<div class="col-xs-12 collapse" id="collapse_cart">
+						<p>El producto ha sido agregado al carrito.</p>
+					</div>
+				<div class="row aux4">
+					<button type="button" class="btn btn-lg btn-block btn-warning favoritos" id="DP2">Agregar a Favoritos</button>
+				</div>
+				<div class="col-xs-12 collapse" id="collapse_fav">
+						<p>El producto ha sido agregado a favoritos.</p>
+					</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-7">
+				<hr class="hr_horizontal">
+			</div>
+		</div>
+		 <div class="row">
+        	<h3 class="pag-subtitle mov-margin spaced">Recomendaciones</h3>
+      	</div>
+     	<div class="row">
+        	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			  <!-- Wrapper for slides -->
+			  <div id="SUPER_CAROUSEL" class="carousel-inner" role="listbox">
+			    
+			  </div>
+
+			  <!-- Left and right controls -->
+			  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+      	</div>
+	</div>
+
+
+<!-- ___________________________________________________ -->
+    <footer class="footer">
+      <div class="container footer-cont">
+
+        <div class="row">
+
+          <div class="col-xs-6 col-sm-6 col-md-8">
+            <div class="row">
+
+              <div class="col-xs-12 col-sm-12 col-md-6"> <!---->
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-6 col1">
+                    <div class="footer-text">
+                      <p class="text-muted">
+                        <b>Seguinos</b>
+                      </p>
+                        <ul>
+                          <li><a href="http://facebook.com" target="_blank">Facebook</a></li>
+                          <li><a href="http://twitter.com" target="_blank">Twitter</a></li>
+                          <li><a href="http://instagram.com" target="_blank">Instagram</a></li>
+                          <li><a href="https://plus.google.com" target="_blank">Google+</a></li>
+                          <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                
+
+                  <div class="col-xs-6 col-sm-6 col-md-6 col2">
+                    <div class="footer-text">
+                      <p class="text-muted">
+                        <b>Empresa</b>
+                      </p>
+                        <ul>
+                          <li><a href="en_construccion.html">¿Quiénes somos?</a></li>
+                          <li><a href="en_construccion.html">Términos y condiciones</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-xs-12 col-sm-12 col-md-6"> <!---->  
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-6 col3">
+                     <div class="footer-text">
+                      <p class="text-muted">
+                        <b>Ayuda</b>
+                      </p>
+                        <ul>
+                          <li><a href="en_construccion.html">Atención al cliente</a></li>
+                          <li><a href="faq.html">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                  
+                  <div class="col-xs-6 col-sm-6 col-md-6 col4">
+                   <div class="footer-text">
+                    <p class="text-muted">
+                      <b></b>
+                    </p>
+                      <ul>
+                        <li><a href="http://www.visa.com.ar/" target="_blank"></a></li>
+                        <li><a href="https://www.masterconsultas.com.ar/" target="_blank"></a></li>
+                        <li><a href="https://www.americanexpress.com/ar/" target="_blank"></a></li>
+                        <li><a href="http://www.mastercard.com/ar/consumidores/maestro.html" target="_blank"></a></li>
+                        <li><a href="http://www.cabal.coop/" target="_blank"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+          <div class="col-xs-6 col-sm-6 col-md-3 col-md-offset-1 -col5">
+            <div class="footer-buy-button">
+              <!--<p class="text-muted">-->
+                <button id="howtobuy" class="btn btn-default howtobuy" type="button">
+                  ¿Cómo comprar?
+                </button>
+              <!--</p>-->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
+
+    <!---->
+    <script src="cookies.js"></script>
+    <script src="API.js"></script>
+    <script src="index.js"></script>
+    <script src="cart.js"></script>
+
+ <!-- ___________________________________________________ -->
+    <script src="detalle_producto.js"></script>
+
+
+<script> 
+
+$(document).ready(function(){
+
+		floads();
+/////////////////////////
+    if (isLogged()){
+      var fav_q = localStorage.getItem('countItem');
+      if (fav_q == null || fav_q == "null")
+        localStorage.setItem('countItem', 0);
+
+      $('#fav-link').append('(' + fav_q + ')');
+
+      getCartLength(
+        function(length){
+           $('#cart-link').append('(' + length + ')');
+        },
+        function(){
+          //KillLoader();
+        });
+
+    } else {
+      //KillLoader();
+    }
+/////////////////////////
+
+
+		loadSearchPage();
+			var s = location.search.substr(1).split('=');
+			var id = parseInt(s[1], 10);
+			s = s[0]
+
+			if (s == 'productId' && id > 0){
+				var url = getProductUrl(1,1,id);
+				APIAction(url,g);
+				
+			}
+
+	var select_count=false;
+	var select_color=false;
+	var select_size=false;
+	
+
+	$("#DP1").on('click',function() {
+		// if(!isLog()){
+		// 	$("#collapse_cart").find('p').text("Debes estar autenticado para agregar productos al carrito.");
+		// 	$("#collapse_cart").collapse('show');
+		// 	return;
+		// }
+		if (isLogged()){
+			if(select_color && select_size && select_count){
+
+				if($(this).hasClass("btn-primary")){
+			  		$("#collapse_cart").find('p').removeClass("rojito");
+			  		$("#collapse_cart").find('p').text("Procesando solicitud...");
+					$("#collapse_cart").collapse('show');
+
+
+			  		var quantity = parseInt($('#item_quantity').parent('.dropdown').find('button').text(), 10);
+			  		var id = parseInt(location.search.substr(1).split('=')[1], 10);
+				  	
+				  	addItemToCart(id, quantity, function(){
+				  		DP1ChangeStyle();
+				  		$("#collapse_cart").find('p').text("Producto agregado al carrito.");
+				  	});
+				} else {
+					window.location="cart.html";
+				}
+			  	    
+			} else{
+				$("#collapse_cart").find('p').text("Debes completar Cantidad, Color y Talle para agregar al carrito.");
+				$("#collapse_cart").collapse('show');
+				return;	
+			}
+		}else{
+			$("#collapse_cart").find('p').addClass("rojito");
+			$("#collapse_cart").find('p').text("Es necesario estar autenticado para Agregar al Carrito");
+			$("#collapse_cart").collapse('show');
+			return;
+		}
+
+	});
+
+	$("#DP2").on('click',function(){
+		/*if (isLogged()){
+			if(select_color && select_size && select_count){
+				var id = parseInt(location.search.substr(1).split('=')[1], 10);
+				var quantity = parseInt($('#item_quantity').parent('.dropdown').find('button').text(), 10);
+				var color = $('#COLOR1').parent('.dropdown').find('button').text();
+				var size = parseInt($('#TALLE1').parent('.dropdown').find('button').text(), 10);
+				addFav(id,size,quantity,color);
+				$('#DP2').text("Ir a Favoritos");
+				$("#collapse_fav").find('p').removeClass("rojito");
+				$("#collapse_fav").find('p').text("Producto agregado a favoritos.");
+			} else{
+				$("#collapse_fav").find('p').text("Debes completar Cantidad, Color y Talle para agregar a favoritos.");
+				$("#collapse_fav").collapse('show');
+				return;
+			}
+		}else{
+			$("#collapse_fav").find('p').addClass("rojito");
+			$("#collapse_fav").find('p').text("Es necesario estar autenticado para agregar productos a favoritos.");
+			$("#collapse_fav").collapse('show');
+		}*/
+		Error('Esta herramienta aún no ha sido implementada. Disculpe las molestias.');
+
+	});
+
+	function DP1ChangeStyle(){
+		$('#DP1').removeClass("btn-primary");
+		  $('#DP1').addClass("btn-success");
+		  $('#DP1').text("Ir al Carrito");
+	}
+
+	$("#DP2").on('click','.info',function() {
+		if($(this).hasClass("favoritos")){
+			$(this).removeClass("favoritos");
+	  		$(this).text("Favoritos");
+		} else{
+			window.location='favoritos.html';
+		}
+
+	});
+
+
+	$(".dropdown-menu").on('click','li',function(){
+	  var selText = $(this).text();
+	  $(this).parents('.dropdown').find('.dropdown-toggle').text(selText);
+	  
+	  if($(this).parent().attr("id")=="item_quantity"){
+	  	select_count=true;
+	  }
+
+	  if($(this).parent().attr("id")=="TALLE1"){
+	  	select_size=true;
+		
+	  	$("#TALLE2").text("Talle: "+selText);
+	  }
+	  if($(this).parent().attr("id")=="COLOR1"){
+	  	select_color=true;
+			
+	  	$("#COLOR2").text("Color: "+selText);
+	  }
+
+
+	});
+
+	//Parse url
+		
+
+});
+
+</script> 
+</body>
+</html>

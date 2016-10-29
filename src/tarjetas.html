@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>look&amp;feel</title>
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="profile.css">
+	<link rel="stylesheet" href="finalizar_compra.css">
+
+
+<!-- ____________________________________________________ --><link href="sticky-footer-navbar.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    
+    <header id="content-top">
+
+
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a id="logo-box" class="navbar-brand verticalLine" href="index.html"><h1>look&amp;feel</h1></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            
+            <ul class="nav navbar-nav">
+              <li id="women"><a id="women-link" href="#">Mujeres</a></li>
+              <li id="men"><a id="men-link" href="#" class="verticalLine">Hombres</a></li>
+              <li id="girls"><a id="girls-link" href="#">Niñas</a></li>
+              <li id="boys" class="verticalLine"><a id="boys-link" href="#">Niños</a></li>
+              <li id="babies"><a id="babies-link" href="#">Bebés</a></li>
+            </ul>
+
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input id="search_key" type="text" class="form-control search-bar" placeholder="Buscar un producto">
+              </div>
+              <button id="search" type="button" class="btn btn-default">Ir</button>
+            </form>
+            
+            <ul class="nav navbar-nav navbar-right">
+              <li><a id="register" href="register.html">Registrarse</a></li>
+              <li class="verticalLine"><a id="login" href="ingresar.html">Ingresar</a></li>
+              <li><a id="cart-link" href="#"><img id="cart-img" src="img/cart.png" alt="carrito"></a></li>
+              <li id="fav-li"><a id="fav-link" href="#"><img id="fav-img" src="img/fav.png" alt="favoritos"></a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+  </header>
+
+<!-- ___________________________________________ -->
+    
+    <div class="container">
+    	<div class="row">&nbsp;</div>
+    	<div class="row">&nbsp;</div>
+    	<div class="row">&nbsp;</div>
+    	<div class="row">&nbsp;</div>
+    	<div class="row">&nbsp;</div>
+    </div>
+
+
+	<div class="container">
+		 <!-- Begin no js msg-->
+	    <!-- ___________________________________________ -->
+	    <noscript>
+	      <div class="alert alert-danger" role="alert">
+	       <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+	       <span class="sr-only">Error:</span>
+	        Es necesario activar JavaScript para que la web funcione correctamente.
+	      </div>
+	    </noscript>
+	    <!-- End no js msg -->
+	    <!-- ___________________________________________ -->
+		<div class = "row spaced">
+				<div class = "col-xs-6">
+					<h2 class="page-title"> Modificar Datos de Tarjeta</h2>
+				</div>
+		</div>
+         <div class="row">
+        	<div class="col-xs-8 col-xs-offset-2 datos_de_cuenta thumbnail">
+				<div class="row spaced">
+					<div class="col-xs-4">
+						<p class="question2">Número:<span class="rojito">*</span></p>
+					</div>
+					<div class="col-xs-7">
+						<p><input id="cart_number" class="form-control pull-right" type="text" name="Nombre" value=""></p>
+					</div>
+				</div>
+				<div class="col-xs-12 collapse" id="collapse_cart_number">
+					<p class="rojito">El número no debe contener '-' y tener 16 caracteres.</p>
+				</div>
+				<div class="row spaced">
+					<div class="col-xs-4">
+						<p class="question2">Código de Seguridad:<span class="rojito">*</span></p>
+					</div>
+					<div class="col-xs-7">
+						<p><input id="cart_cod" class="form-control pull-right" type="password" name="Nombre" value=""></p>
+					</div>
+				</div>
+				<div class="col-xs-12 collapse" id="collapse_cart_cod">
+					<p class="rojito">El código debe tener 3 caracteres.</p>
+				</div>
+				<div class="row spaced">
+					<div class="col-xs-4">
+						<p class="question2">Fecha de Vencimiento:<span class="rojito">*</span></p>
+					</div>
+					<div class="col-xs-8">
+						<div class="row">
+							<div class="col-xs-5">
+								<div class="dropdown">
+	  								<button id="def_month" class="btn btn-md btn-default dropdown-toggle btn-block" type="button" data-toggle="dropdown">
+	 								<span class="caret"></span></button>
+	 								<ul id="MONTH" class="dropdown-menu listElem">
+										<li><a class="month1">Enero</a></li>
+										<li><a class="month3">Febrero</a></li>
+										<li><a class="month1">Marzo</a></li>
+										<li><a class="month2">Abril</a></li>
+										<li><a class="month1">Mayo</a></li>
+										<li><a class="month2">Junio</a></li>
+										<li><a class="month1">Julio</a></li>
+										<li><a class="month1">Agosto</a></li>
+										<li><a class="month2">Septiembre</a></li>
+										<li><a class="month1">Octubre</a></li>
+										<li><a class="month2">Noviembre</a></li>
+										<li><a class="month1">Diciembre</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-xs-5">
+								<div class="dropdown">
+	  								<button id="def_year"class="btn btn-md dropdown-toggle btn-default btn-block" type="button" data-toggle="dropdown">
+	 								<span class="caret"></span></button>
+	 								<ul id="YEARS" class="dropdown-menu listElem">
+										
+									</ul>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="col-xs-12 collapse" id="collapse_cart_date">
+					<p class="rojito">La fecha no es vádida o la tarjeta esta vencida.</p>
+				</div>
+				<div class="row">
+	       			<div class="col-xs-6">
+	       				<button id="ADD_CART" type='button' class='btn btn-sm btn-block btn-success extra'>Confirmar</button>
+	       			</div>
+	       			<div class="col-xs-6">			    				
+							<button type="button" class="btn btn-sm btn-block btn-danger delete-order extra" id="modificar-cancel">Cancelar</button>
+					</div>
+	       		</div>
+	       		<div class="col-xs-12 collapse" id="collapse_add_cart">
+					<p class="rojito centered">Faltan completar datos.</p>
+				</div>	
+        	</div>
+   		</div>
+	   
+     
+		<!--
+		<div class="row">
+			<div class="col-xs-6 datos_de_cuenta thumbnail">
+          		<div class="row textList">
+					<div class="col-xs-4">
+						<p class="question2">Número:<span class="rojito">*</span></p>
+					</div>
+					<div class="col-xs-8">
+						<p><input class="form-control pull-right" id="tarjetas1" type="text" name="Nombre" value=""></p>
+					</div>
+				</div>
+				<div class="row textList">
+					<div class="col-xs-4">
+						<p class="question2">Código de Seguridad:<span class="rojito">*</span></p>
+					</div>
+					<div class="col-xs-8">
+						<p><input class="form-control pull-right" id="tarjetas2" type="password" name="Nombre" value=""></p>
+					</div>
+				</div>
+				<div class="row textList">
+					<div class="col-xs-4">
+						<p class="question2">Fecha de Vencimiento:<span class="rojito">*</span></p>
+					</div>
+					<div class="col-xs-8">
+						<p><input class="form-control pull-right" id="tarjetas3" type="text" name="Nombre" value=""></p>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-xs-6">
+			
+							<button type="button" class="btn btn-sm btn-success btn-block extra" id="modificar-accept">Confirmar Cambios</button>
+
+					</div>
+					<div class="col-xs-6">			    				
+							<button type="button" class="btn btn-sm btn-block btn-danger delete-order extra" id="modificar-cancel">Cancelar</button>
+					</div>
+				</div>
+        	</div>
+        </div>
+        -->			
+	</div>
+
+  <!-- ___________________________________________________ -->
+    <footer class="footer">
+      <div class="container footer-cont">
+
+        <div class="row">
+
+          <div class="col-xs-6 col-sm-6 col-md-8">
+            <div class="row">
+
+              <div class="col-xs-12 col-sm-12 col-md-6"> <!---->
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-6 col1">
+                    <div class="footer-text">
+                      <p class="text-muted">
+                        <b>Seguinos</b>
+                      </p>
+                        <ul>
+                          <li><a href="http://facebook.com" target="_blank">Facebook</a></li>
+                          <li><a href="http://twitter.com" target="_blank">Twitter</a></li>
+                          <li><a href="http://instagram.com" target="_blank">Instagram</a></li>
+                          <li><a href="https://plus.google.com" target="_blank">Google+</a></li>
+                          <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                
+
+                  <div class="col-xs-6 col-sm-6 col-md-6 col2">
+                    <div class="footer-text">
+                      <p class="text-muted">
+                        <b>Empresa</b>
+                      </p>
+                        <ul>
+                          <li><a href="en_construccion.html">¿Quiénes somos?</a></li>
+                          <li><a href="en_construccion.html">Términos y condiciones</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-xs-12 col-sm-12 col-md-6"> <!---->  
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-6 col3">
+                     <div class="footer-text">
+                      <p class="text-muted">
+                        <b>Ayuda</b>
+                      </p>
+                        <ul>
+                          <li><a href="en_construccion.html">Atención al cliente</a></li>
+                          <li><a href="faq.html">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                  
+                  <div class="col-xs-6 col-sm-6 col-md-6 col4">
+                   <div class="footer-text">
+                    <p class="text-muted">
+                      <b></b>
+                    </p>
+                      <ul>
+                        <li><a href="http://www.visa.com.ar/" target="_blank"></a></li>
+                        <li><a href="https://www.masterconsultas.com.ar/" target="_blank"></a></li>
+                        <li><a href="https://www.americanexpress.com/ar/" target="_blank"></a></li>
+                        <li><a href="http://www.mastercard.com/ar/consumidores/maestro.html" target="_blank"></a></li>
+                        <li><a href="http://www.cabal.coop/" target="_blank"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+          <div class="col-xs-6 col-sm-6 col-md-3 col-md-offset-1 -col5">
+            <div class="footer-buy-button">
+              <!--<p class="text-muted">-->
+                <button id="howtobuy" class="btn btn-default howtobuy" type="button">
+                  ¿Cómo comprar?
+                </button>
+              <!--</p>-->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
+
+<script src="index.js"></script>
+<script src="API.js"></script>
+<script src="cookies.js"></script>
+<script src="cart.js"></script>
+<script src="validations.js"></script>
+
+<script>
+	
+	$( document ).ready(function() {
+
+		///////////////////////////
+	    floads();
+
+	    if (isLogged()){
+	      var fav_q = localStorage.getItem('countItem');
+	      if (fav_q == null || fav_q == "null")
+	        localStorage.setItem('countItem', 0);
+
+	      $('#fav-link').append('(' + fav_q + ')');
+
+	      getCartLength(
+	        function(length){
+	           $('#cart-link').append('(' + length + ')');
+	        },
+	        function(){
+	          //KillLoader();
+	        });
+
+	    } else {
+	      //KillLoader();
+	    }
+	    /////////////////////////////////
+
+		/* Variables used for validation */
+		
+		var cart_id;
+		//var addr_id;
+		//var address;
+		var creditCards;
+		var select_month = true;
+		var select_day = true;
+		var select_hour = true;
+		//var valid_addr = false;
+		var valid_cart = false;
+		var cart_number;
+		var cart_date;
+		var cart_cod;
+		var valid_cart_number=true;
+		var valid_cart_date=true;
+		var valid_cart_cod=true;
+		
+		/* Load Default Values */
+
+		$("#cart_number").attr('value', getParameterByName('number'));
+		
+		var month = getParameterByName('expire').split('/')[0];
+		var year = "20" + getParameterByName('expire').split('/')[1];
+
+		$("#def_month").text(convertIntToMonth(parseInt(month)-1));
+		$("#def_year").text("20" + getParameterByName('expire').split('/')[1]);
+
+		/*Get SecurityCode*/
+		var username = get_cookie('username');
+		var token = get_cookie('authenticationToken');
+							
+		var url0 = 'http://eiffel.itba.edu.ar/hci/service3/Account.groovy?method=GetCreditCardsByNumber&username='+username+'&authentication_token='+token+'&number='+getParameterByName('number');
+
+   		var getCardByNum = function(arr){
+			var a = arr["creditCards"];
+			$("#cart_cod").attr('value', a[0].securityCode);
+   		};
+   		
+		APIAction(url0,getCardByNum);
+
+		/* Buttons */
+
+		/* Add New Card*/
+
+		for(var x=2016;x<2030;x++){
+			aux2=$("<li><a>"+x+"</a></li>");
+			$("#YEARS").append(aux2);
+		}
+
+		$(".dropdown-menu").on('click','li',function(){
+			var selText = $(this).text();
+			$(this).parents('.dropdown').find('.dropdown-toggle').text(selText);
+		});
+
+
+		$("#cart_number").focusout(function(){
+			 valid_cart_number = false;
+			 cart_number = document.getElementById("cart_number").value;
+			if(validate_number(cart_number)){
+				valid_cart_number=true;
+				$("#collapse_cart_number").collapse('hide');
+			}else{
+				$("#collapse_cart_number").collapse('show');
+			}
+		});
+
+		$("#cart_cod").focusout(function(){
+			valid_cart_cod = false;
+			cart_cod = document.getElementById("cart_cod").value;
+			if(validate_cod(cart_cod)){
+				valid_cart_cod=true;
+				$("#collapse_cart_cod").collapse('hide');
+			}else{
+				$("#collapse_cart_cod").collapse('show');
+			}
+		});
+
+		$("#ADD_CART").on('click',function(){
+			var year;
+			var month;
+			month = $("#MONTH").parents(".dropdown").find("button").text();
+		  	year = $("#YEARS").parents(".dropdown").find("button").text();
+		  	var d = new Date();
+		  	if(month.localeCompare("Mes")==0 || year.localeCompare("Año")==0){
+		  		$("#collapse_cart_date").collapse('show');
+		  		valid_cart_date = false;
+		  	}else{
+		  		valid_cart_date=true;
+		  		if(d.getFullYear()==year){
+		  			if(d.getMonth()<=convertMonth(month)){
+		  				valid_cart_date=false;
+		  			}
+		  		}
+		  		else if(d.getFullYear()<year){
+		  			valid_date=false;
+		  		}
+		  	}
+		  	if(!valid_cart_date){
+		  		$("#collapse_cart_date").collapse('show');
+		  	}else{
+		  		if(valid_cart_date && valid_cart_cod && valid_cart_number){
+		  			$("#collapse_add_cart").collapse('hide');
+		  			valid_cart=true;
+		  			
+		  			//////////////
+		  			
+					var username = get_cookie('username');
+					var token = get_cookie('authenticationToken');
+
+					var number = $("#cart_number").val();
+					var code = $("#cart_cod").val();
+					
+					var month= $("#MONTH").parents(".dropdown").find("button").text();
+		  			var year = $("#YEARS").parents(".dropdown").find("button").text();
+		  			var expire = convertMonthToString(month)+year[2]+year[3];
+		  			
+
+
+					var f = function(arr){
+						window.location = "profile.html?activeTab=tarjetas";
+			   		};
+
+			   		var getCardByNum = function(arr){
+						
+						var cardID = arr["creditCards"];
+
+
+						var url2 = 'http://eiffel.itba.edu.ar/hci/service3/Account.groovy?method=UpdateCreditCard&username='+username+'&authentication_token='+token+'&credit_card={"id":'+cardID[0].id+',"number":"'+number+'","expirationDate":"'+expire+'","securityCode":"'+code+'"}';
+						
+						APIAction(url2,f);
+			   		};
+			   		var url = 'http://eiffel.itba.edu.ar/hci/service3/Account.groovy?method=GetCreditCardsByNumber&username='+username+'&authentication_token='+token+'&number='+getParameterByName('number');
+					APIAction(url,getCardByNum);
+		  			/////////////////
+
+		  		}else{
+		  			$("#collapse_add_cart").collapse('show');
+		  		}
+		  	}
+		});
+		
+		
+		$("#modificar-cancel").on('click', function(){
+			window.location = "profile.html?activeTab=tarjetas";
+		});
+	
+	});	
+</script>
+</body>
+</html>
